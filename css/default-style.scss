@@ -349,6 +349,24 @@ body{
 }
 
 
+.switch__left:hover path, .switch__right:hover path{
+    fill: #ffa000;
+    cursor: pointer;
+}
+
+.switch__left path, .switch__right path{
+    transition-duration: .5s;
+}
+
+
+.switch__left{
+    margin-right: 20px;
+}
+
+.switch__right{
+    margin-left: 20px;
+}
+
 
 @media (max-width: 1669px){
     body.lock{
@@ -1042,9 +1060,13 @@ tr{
     &__number{
         margin: 0 20px;
         color: #BFBFBF;
-        transition: 1s ease-in-out;
+        transition: .5s ease-in-out;
         cursor: pointer;
-    }
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        -ms-transition: .5s ease-in-out;
+        -o-transition: .5s ease-in-out;
+}
     &__number:hover{
         color: #000;
     }
