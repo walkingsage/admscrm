@@ -1,0 +1,92 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+@font-face {
+    font-family: 'GRegular';
+    src: url('../../fonts/gilroy-regular.eot');
+    src: local('Gilroy Regular'), local('Gilroy-Regular'),
+        url('../../fonts/gilroy-regular.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/gilroy-regular.woff2') format('woff2'),
+        url('../../fonts/gilroy-regular.woff') format('woff'),
+        url('../../fonts/gilroy-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GBold';
+    src: url('../../fonts/gilroy-bold.eot');
+    src: local('Gilroy Regular'), local('Gilroy-Regular'),
+        url('../../fonts/gilroy-bold.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/gilroy-bold.woff2') format('woff2'),
+        url('../../fonts/gilroy-bold.woff') format('woff'),
+        url('../../fonts/gilroy-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GSemi';
+    src: url('../../fonts/gilroy-semibold.eot');
+    src: local('Gilroy Semibold'), local('Gilroy-Semibold'),
+        url('../../fonts/gilroy-semibold.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/gilroy-semibold.woff2') format('woff2'),
+        url('../../fonts/gilroy-semibold.woff') format('woff'),
+        url('../../fonts/gilroy-semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'DBlack';
+  src: url('../../fonts/display-black.eot');
+  src: local('Gilroy Semibold'), local('Gilroy-Semibold'),
+      url('../../fonts/display-black.eot?#iefix') format('embedded-opentype'),
+      url('../../fonts/display-black.woff2') format('woff2'),
+      url('../../fonts/display-black.woff') format('woff'),
+      url('../../fonts/display-black.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}

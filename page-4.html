@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMS</title>
+    <link rel="stylesheet" href="chosen/chosen.css">
+    <link rel="stylesheet" href="css/resetCSS.css">
+    <link rel="stylesheet" href="css/default-style.css">
+
+    
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="images/logo.svg" alt="" class="header__logo">
+            <div class="header__burger">
+                <span></span>
+            </div>
+            <div class="header__content">
+                <div class="header__navigation">
+                    <ul class="header__list">
+                        <li>
+                            <a class="header__link">Главная</a>
+                        </li>
+                            <a class="header__link">Договора</a>
+                        </li>
+                        <li>
+                            <a class="header__link">Заказы</a>
+                        </li>
+                        <li>
+                            <a class="header__link">Заявки</a>
+                        </li>
+                        <li>
+                            <a class="header__link">КомПред</a>
+                        </li>
+                        <li>
+                            <a class="header__link">Менеджер</a>
+                        </li>
+                        <li>
+                            <a class="header__link">Отчеты</a>
+                        </li>
+                        <li>
+                            <a class="header__link">Руководитель</a>
+                        </li>
+                        <li>
+                            <a class="header__link">События</a>
+                        </li>
+                        <li>
+                            <a class="header__link">Карта</a>
+                        </li>
+                        <li>
+                            <a class="header__link">Справочники</a>
+                        </li>
+                        <li>
+                            <a class="header__link">Опции</a>
+                        </li>
+                        <li>
+                            <a class="header__link">adm-выйти</a>
+                        </li>
+                    </ul>
+                    <div class="header__info">
+                        <p class="header__info_text">Ваша роль:<span class="header__info_bold">Администратор</span>;</p>
+                        <p class="header__info_text">Ваш логин:<span class="header__info_bold">adm</span>;</p>
+                        <p class="header__info_text">Версия:<span class="header__info_bold">Na</span>;</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="title">
+                <p class="title__title">ADMS - БД - ПОЛЬЗОВАТЕЛИ</p>
+                <div class="title__info">
+                    <div class="title__link">
+                        <img src="images/locate.svg" alt="" class="title__icon">
+                        <select data-placeholder="день" class="select-locale">
+                            <option>Ростов-на-Дону</option>
+                            <option>Москва</option>
+                            <option>Санкт-Петербург</option>
+                            <option>Екатеренбург</option>
+                        </select>
+                    </div>
+                    <div class="title__link">
+                        <img src="images/person.svg" alt="" class="title__icon">
+                        <p>Менеджер</p>
+                    </div>
+                </div>
+                <div class="title__buttons">
+                    <div class="title__button modal2__open">
+                        <button type="button" class="btn-plus"></button>
+                        <p class="modal2__text">Создать заявку</p>
+                    </div>
+                    <div class="title__button">
+                        <button type="button" class="btn-2"></button>
+                        <p>Создать пользователя</p>
+                    </div>
+                    <div class="title__button modal3__open">
+                        <button type="button" class="reboot"></button>
+                        <p>Обновить</p>
+                    </div>
+                    <div class="title__button">
+                        <button type="button" class="btn-3"></button>
+                        <p>Фильтр</p>
+                    </div>
+                </div>
+            </section>
+            <section class="content">
+                <div class="table table-page4">
+                    <p class="table__title">Справочник пользователей</p>
+                    <div class="table-scroll">
+                        <table class="table-page4">
+                            <tr class="tr tr_title tr_orange">
+                                <th class="td__button">
+                                    <label class="label">
+                                        <input class="checkbox-white" type="checkbox">
+                                        <span class ="fake-white"></span>
+                                    </label>
+                                </th>
+                                <th>Логин</th>
+                                <th>Имя</th>
+                                <th>Роль</th>
+                                <th>Город</th>
+                                <th>Колл-центр</th>
+                                <th>ID</th>
+                            </tr>
+                            <tr class='tr tr_blue'>
+                                <td class="td__button">
+                                    <label class="label">
+                                        <input class="checkbox-white" type="checkbox">
+                                        <span class ="fake-white"></span>
+                                    </label>
+                                </td>
+                                <td class="td td_big">ad_min</td>
+                                <td>Алексей</td>
+                                <td>administrator</td>
+                                <td class="td_left">
+                                    Длинный 
+                                    список
+                                    городо
+                                    этого
+                                    региона
+                                </td>
+                                <td>первый</td>
+                                <td>36517</td>
+                            </tr>
+                            <tr class='tr tr_grey'>
+                                <td class="td__button">
+                                    <label class="label">
+                                        <input class="checkbox" type="checkbox">
+                                        <span class ="fake fake_orange"></span>
+                                    </label>
+                                </td>
+                                <td class="td td_big">Ivan_T</td>
+                                <td>Иван</td>
+                                <td>user</td>
+                                <td class="td_left">короткий 
+                                    список</td>
+                                <td>первый</td>
+                                <td>25129</td> 
+                            </tr>
+                            <tr class='tr tr_grey'>
+                                <td class="td__button">
+                                    <label class="label">
+                                        <input class="checkbox" type="checkbox">
+                                        <span class ="fake fake_orange"></span>
+                                    </label>
+                                </td>
+                                <td class="td td_big">Corsar</td>
+                                <td>Темфей</td>
+                                <td>user +</td>
+                                <td class="td_left">один город</td>
+                                <td>первый</td>
+                                <td>24008</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <a href="" class="button button_orange">удалить</a>
+                </div>
+            </section>
+        </main>
+        <div class="overlay1">
+            <div class="pop-up1">
+                <img src="images/exit.svg" alt="" class="pop-up1__exit">
+                <p class="pop-up1__title">ЗАГРУЗИТЬ АКТ</p>
+                <div class="pop-up1__content">
+                    <div class="pop-up1__search">
+                        <input type="text" class="pop-up1__input" placeholder="файл не выбран...">
+                        <a href="" class="button button_orange pop-up1__review">обзор</a>
+                    </div>
+                    <p class="pop-up1__types">поддерживаются файлы: *.doc, *.txt, *.pdf</p>
+                </div> 
+                <div class="pop-up1__bottom">
+                    <div class="pop-up1__files">
+                        <p class="files__title">Загруженные файлы:</p>  
+                        <div class="files__content">
+                            <p class="files__file">Акт выполненных работ_Антарес_12.17.2020.doc</p>
+                            <p class="files__discription">150 kb</p>
+                            <img src="images/cross.svg" alt="" class="files__icon">
+                        </div>
+                    </div>
+                    <a class="pop-up1__button-big">Загрузить файл</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="chosen/chosen.jquery.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $(".pop-up2__select").chosen();
+            $(".chosen-select").chosen({width: "254px"}); 
+            $(".select-locale").chosen({width: "170px"});
+            $(".select-date").chosen({width: "100%"})
+        });
+    </script>
+</body>
+</html>

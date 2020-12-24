@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMS</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="chosen/chosen.css">
+    <link rel="stylesheet" href="css/resetCSS.css">
+    <link rel="stylesheet" href="css/default-style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="images/logo.svg" alt="" class="header__logo">
+            <div class="header__burger">
+                <span></span>
+            </div>
+            <div class="header__content">
+                <div class="header__navigation">
+                    <ul class="header__list">
+                        <li>
+                            <a class="header__link">Главная</a>
+                        </li>
+                            <a class="header__link">Договора</a>
+                        </li>
+                        <li>
+                            <a class="header__link">Заказы</a>
+                        </li>
+                        <li>
+                            <a class="header__link">Заявки</a>
+                        </li>
+                        <li>
+                            <a class="header__link">КомПред</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="header__link bold">Справочники</a>
+                            <ul class="menu__item__submenu">
+                                <li class="menu__item__submenu__subitem">
+                                    <span class="menu__item__submenu__treugolnik"></span>
+                                    <span class="menu__item__submenu__treugolnik__border"></span>
+                                    <a href="#" class="header__link__sub">Категории контрагентов</a>
+                                </li>
+                                <li class="menu__item__submenu__subitem"><a href="#" class="header__link__sub">Е-mail</a></li>
+                                <li class="menu__item__submenu__subitem"><a href="#" class="header__link__sub">Города контрагентов</a></li>
+                                <li class="menu__item__submenu__subitem"><a href="#" class="header__link__sub">Колл-центры</a></li>
+                                <li class="menu__item__submenu__subitem"><a href="#" class="header__link__sub">Мастера</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="header__link">Опции</a>
+                        </li>
+                        <li>
+                            <a class="header__link">adm: выйти</a>
+                        </li>
+                    </ul>
+                    <div class="header__info">
+                        <p class="header__info_text">Ваша роль:<span class="header__info_bold">Администратор</span>;</p>
+                        <p class="header__info_text">Ваш логин:<span class="header__info_bold">adm</span>;</p>
+                        <p class="header__info_text">Версия:<span class="header__info_bold">Na</span>;</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="title">
+                <p class="title__title">ADMS - БД - Заявки (Проект: Окна)</p>
+                <div class="title__info">
+                    <div class="title__link">
+                        <img src="images/locate.svg" alt="" class="title__icon">
+                        <select data-placeholder="день" class="select-locale">
+                            <option>Ростов-на-Дону</option>
+                            <option>Москва</option>
+                            <option>Санкт-Петербург</option>
+                            <option>Екатеренбург</option>
+                        </select>
+                    </div>
+                    <div class="title__link">
+                        <img src="images/person.svg" alt="" class="title__icon">
+                        <p>Менеджер</p>
+                    </div>
+                </div>
+                <div class="title__buttons">
+                    <div class="title__button modal2__open">
+                        <button type="button" class="btn-plus"></button>
+                        <p class="modal2__text">Создать заявку</p>
+                    </div>
+                    <div class="title__button modal3__open">
+                        <button type="button" class="reboot"></button>
+                        <p>Обновить</p>
+                    </div>
+                </div>
+            </section>
+            <section class="content">
+                <div class="table table-page1">
+                    <p class="table__title">Заявки по городу Ростов-на-Дону</p>
+                    <div class="table-scroll">
+                        <table class = "table-page1 table table_t1">
+                            <tr class='tr tr_title tr_orange'>
+                                <th>Менеджер</th>
+                                <th>Время</th>
+                                <th>Имя</th>
+                                <th>Телефоны</th>
+                                <th>Адрес</th>
+                                <th>Комментарий</th>
+                                <th>Кол-во</th>
+                                <th>Лет</th>
+                                <th>Оператор</th>
+                                <th>Статус</th>
+                                <th>Номер</th>
+                            </tr>
+                            <tr class='tr td_small-padding'>
+                                <td>
+                                    <button type="button" class="btn-plus"></button>
+                                </td>
+                                <td>15:05</td>
+                                <td>Тамара Николаевна</td>
+                                <td><p class="td td__number">542-58-73  899 933-4-47-61</p></td>
+                                <td>ул. Коммунистическая, д.43, кв.55</td>
+                                <td>Профилактика и диагностика</td>
+                                <td>2</td>
+                                <td>11</td>
+                                <td>Оператор Ирина</td>
+                                <td class="td td_bold">не назначена</td>
+                                <td class="td td_bold">32156</td>
+                            </tr>
+                            <tr class='tr tr_yellow td_small-padding'>
+                                <td>
+                                    <button type="button" class="btn-plus"></button>
+                                </td>
+                                <td>15:05</td>
+                                <td>Тамара Николаевна</td>
+                                <td><p class="td td__number td__number_grey">542-58-73<span>899</span>933-4-47-61</p></td>
+                                <td>ул. Коммунистическая, д.43, кв.55</td>
+                                <td>Профилактика и диагностика</td>
+                                <td>2</td>
+                                <td>11</td>
+                                <td>Оператор Ирина</td>
+                                <td class="td td_bold">назначена</td>
+                                <td class="td td_bold">32157</td>
+                            </tr>
+                            <tr class='tr tr_blue'>
+                                <td class="td td_bold">Игорь Кучеренко</td>
+                                <td>15:05</td>
+                                <td>Тамара Николаевна</td>
+                                <td><p class="td td__number">542-58-73<span>899</span>933-4-47-61</p></td>
+                                <td>ул. Коммунистическая, д.43, кв.55</td>
+                                <td>Профилактика и диагностика</td>
+                                <td>2</td>
+                                <td>11</td>
+                                <td>Оператор Ирина</td>
+                                <td class="td td_bold">менеджер у клиента</td>
+                                <td class="td td_bold">32157</td>
+                            </tr>
+                            <tr class='tr tr_green'>
+                                <td class="td td_bold">Иван Халдеев</td>
+                                <td>15:05</td>
+                                <td>Тамара Николаевна</td>
+                                <td><p class="td td__number">542-58-73<span>899</span>933-4-47-61</p></td>
+                                <td>ул. Коммунистическая, д.43, кв.55</td>
+                                <td>Профилактика и диагностика</td>
+                                <td>2</td>
+                                <td>11</td>
+                                <td>Оператор Ирина</td>
+                                <td class="td td_bold">выполнена</td>
+                                <td class="td td_bold">32157</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p class="table__title">Менеджеры по Ростов-на-Дону</p>
+                    <div class="table table__person" data-name='spoiler-title'>
+                        <div class="manager__left">
+                            <p class="manager__name">Олег Стрельцов</p>
+                            <img src="images/pen-white.svg" alt="" class="pen">
+                            <p class="manager__content">Завершено: 0</p>
+                            <p class="manager__content">Отказ: 0</p>
+                        </div>
+                        <p class="manager__num">110 536 руб.</p>
+                    </div>
+                    <div class="table-scroll table-hide">
+                        <table class="table table_t2 table-page1">
+                            <tr>
+                                <td>15:05</td>
+                                <td>Тамара Николаевна</td>
+                                <td><p>542-58-73<span>899</span>933-4-47-61</p></td>
+                                <td>ул. Коммунистическая, д.43, кв.55</td>
+                                <td>Профилактика и диагностика</td>
+                                <td>2</td>
+                                <td>11</td>
+                                <td>Оператор Ирина</td>
+                                <td class="td td_blue">В работе</td>
+                                <td>
+                                    <div class="title__button td_create">
+                                        <button type="button" class="btn-plus"></button>
+                                        <p>Создать заказ</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>15:05</td>
+                                <td>Тамара Николаевна</td>
+                                <td><p>542-58-73<span>899</span>933-4-47-61</p></td>
+                                <td>ул. Коммунистическая, д.43, кв.55</td>
+                                <td>Профилактика и диагностика</td>
+                                <td>2</td>
+                                <td>11</td>
+                                <td>Оператор Ирина</td>
+                                <td class="td td_green">Выполнено</td>
+                                <td>
+                                    <div class="title__button td_create">
+                                        <button type="button" class="btn-plus"></button>
+                                        <p>Создать заказ</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>15:05</td>
+                                <td>Тамара Николаевна</td>
+                                <td><p>542-58-73<span>899</span>933-4-47-61</p></td>
+                                <td>ул. Коммунистическая, д.43, кв.55</td>
+                                <td>Профилактика и диагностика</td>
+                                <td>2</td>
+                                <td>11</td>
+                                <td>Оператор Ирина</td>
+                                <td class="td td_green">Выполнено</td>
+                                <td>
+                                    <div class="title__button td_create">
+                                        <button type="button" class="btn-plus"></button>
+                                        <p>Создать заказ</p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="table table__person" data-name='spoiler-title'>
+                        <div class="manager__left">
+                            <p class="manager__name">Олег Стрельцов</p>
+                            <img src="images/pen-white.svg" alt="" class="pen">
+                            <p class="manager__content">Завершено: 0</p>
+                            <p class="manager__content">Отказ: 0</p>
+                        </div>
+                        <p class="manager__num">110 536 руб.</p>
+                    </div>
+                    <div class="table-scroll table-hide">
+                        <table class="table table_t2 table-page1">
+                            <tr>
+                                <td>15:05</td>
+                                <td>Тамара Николаевна</td>
+                                <td><p>542-58-73<span>899</span>933-4-47-61</p></td>
+                                <td>ул. Коммунистическая, д.43, кв.55</td>
+                                <td>Профилактика и диагностика</td>
+                                <td>2</td>
+                                <td>11</td>
+                                <td>Оператор Ирина</td>
+                                <td class="td td_blue">В работе</td>
+                                <td>
+                                    <div class="title__button td_create">
+                                        <button type="button" class="btn-plus"></button>
+                                        <p>Создать заказ</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>15:05</td>
+                                <td>Тамара Николаевна</td>
+                                <td><p>542-58-73<span>899</span>933-4-47-61</p></td>
+                                <td>ул. Коммунистическая, д.43, кв.55</td>
+                                <td>Профилактика и диагностика</td>
+                                <td>2</td>
+                                <td>11</td>
+                                <td>Оператор Ирина</td>
+                                <td class="td td_green">Выполнено</td>
+                                <td>
+                                    <div class="title__button td_create">
+                                        <button type="button" class="btn-plus"></button>
+                                        <p>Создать заказ</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>15:05</td>
+                                <td>Тамара Николаевна</td>
+                                <td><p>542-58-73<span>899</span>933-4-47-61</p></td>
+                                <td>ул. Коммунистическая, д.43, кв.55</td>
+                                <td>Профилактика и диагностика</td>
+                                <td>2</td>
+                                <td>11</td>
+                                <td>Оператор Ирина</td>
+                                <td class="td td_green">Выполнено</td>
+                                <td>
+                                    <div class="title__button td_create">
+                                        <button type="button" class="btn-plus"></button>
+                                        <p>Создать заказ</p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="table table__person" data-name='spoiler-title'>
+                        <div class="manager__left">
+                            <p class="manager__name">Олег Стрельцов</p>
+                            <img src="images/pen-white.svg" alt="" class="pen">
+                            <p class="manager__content">Завершено: 0</p>
+                            <p class="manager__content">Отказ: 0</p>
+                        </div>
+                        <p class="manager__num">110 536 руб.</p>
+                    </div>
+                    <div class="table-scroll table-hide">
+                        <table class="table table_t2 table-page1">
+                            <tr>
+                                <td>15:05</td>
+                                <td>Тамара Николаевна</td>
+                                <td><p>542-58-73<span>899</span>933-4-47-61</p></td>
+                                <td>ул. Коммунистическая, д.43, кв.55</td>
+                                <td>Профилактика и диагностика</td>
+                                <td>2</td>
+                                <td>11</td>
+                                <td>Оператор Ирина</td>
+                                <td class="td td_blue">В работе</td>
+                                <td>
+                                    <div class="title__button td_create">
+                                        <button type="button" class="btn-plus"></button>
+                                        <p>Создать заказ</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>15:05</td>
+                                <td>Тамара Николаевна</td>
+                                <td><p>542-58-73<span>899</span>933-4-47-61</p></td>
+                                <td>ул. Коммунистическая, д.43, кв.55</td>
+                                <td>Профилактика и диагностика</td>
+                                <td>2</td>
+                                <td>11</td>
+                                <td>Оператор Ирина</td>
+                                <td class="td td_green">Выполнено</td>
+                                <td>
+                                    <div class="title__button td_create">
+                                        <button type="button" class="btn-plus"></button>
+                                        <p>Создать заказ</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>15:05</td>
+                                <td>Тамара Николаевна</td>
+                                <td><p>542-58-73<span>899</span>933-4-47-61</p></td>
+                                <td>ул. Коммунистическая, д.43, кв.55</td>
+                                <td>Профилактика и диагностика</td>
+                                <td>2</td>
+                                <td>11</td>
+                                <td>Оператор Ирина</td>
+                                <td class="td td_green">Выполнено</td>
+                                <td>
+                                    <div class="title__button td_create">
+                                        <button type="button" class="btn-plus"></button>
+                                        <p>Создать заказ</p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="table table__person" data-name='spoiler-title'>
+                        <div class="manager__left">
+                            <p class="manager__name">Олег Стрельцов</p>
+                            <img src="images/pen-white.svg" alt="" class="pen">
+                            <p class="manager__content">Завершено: 0</p>
+                            <p class="manager__content">Отказ: 0</p>
+                        </div>
+                        <p class="manager__num">110 536 руб.</p>
+                    </div>
+                    <div class="table-scroll table-hide">
+                        <table class="table table_t2 table-page1">
+                            <tr>
+                                <td>15:05</td>
+                                <td>Тамара Николаевна</td>
+                                <td><p>542-58-73<span>899</span>933-4-47-61</p></td>
+                                <td>ул. Коммунистическая, д.43, кв.55</td>
+                                <td>Профилактика и диагностика</td>
+                                <td>2</td>
+                                <td>11</td>
+                                <td>Оператор Ирина</td>
+                                <td class="td td_blue">В работе</td>
+                                <td>
+                                    <div class="title__button td_create">
+                                        <button type="button" class="btn-plus"></button>
+                                        <p>Создать заказ</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>15:05</td>
+                                <td>Тамара Николаевна</td>
+                                <td><p>542-58-73<span>899</span>933-4-47-61</p></td>
+                                <td>ул. Коммунистическая, д.43, кв.55</td>
+                                <td>Профилактика и диагностика</td>
+                                <td>2</td>
+                                <td>11</td>
+                                <td>Оператор Ирина</td>
+                                <td class="td td_green">Выполнено</td>
+                                <td>
+                                    <div class="title__button td_create">
+                                        <button type="button" class="btn-plus"></button>
+                                        <p>Создать заказ</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>15:05</td>
+                                <td>Тамара Николаевна</td>
+                                <td><p>542-58-73<span>899</span>933-4-47-61</p></td>
+                                <td>ул. Коммунистическая, д.43, кв.55</td>
+                                <td>Профилактика и диагностика</td>
+                                <td>2</td>
+                                <td>11</td>
+                                <td>Оператор Ирина</td>
+                                <td class="td td_green">Выполнено</td>
+                                <td>
+                                    <div class="title__button td_create">
+                                        <button type="button" class="btn-plus"></button>
+                                        <p>Создать заказ</p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="table__double">
+                        <div>
+                            <div class="table__top">
+                                <p class="table__title table__title_nomargin">Сводная статистика по Ростов-на-Дону</p>
+                                <div class="table__select table__select_1">
+                                    <select data-placeholder="день" class="select-date">
+                                        <option>день</option>
+                                        <option>с начала недели</option>
+                                        <option>за прошлый месяц</option>
+                                        <option>за конкретный день</option>
+                                    </select>
+                                </div>
+                                <p class="table__group">группировать</p>
+                                <label class="label">
+                                    <input class="checkbox checkbox_orange" type="checkbox">
+                                    <span class ="fake fake_orange"></span>
+                                </label>
+                            </div>
+                            <div class="table-scroll">
+                            <table class="table table_t3  table-page1">
+                                <tr class='tr tr_title tr_orange'>
+                                    <th>Дата</th>
+                                    <th>Город</th>
+                                    <th>Менеджеры</th>
+                                    <th>Заявки ( в работе и завершённые )</th>
+                                    <th>Отказы</th>
+                                    <th>Товарооборот</th>
+                                </tr>
+                                <tr class="tr tr_border-right">
+                                    <td>23.11.2020</td>
+                                    <td class="td td_left">Ростов-на-Дону</td>
+                                    <td>3</td>
+                                    <td>3</td>
+                                    <td>0</td>
+                                    <td>32517</td>
+                                </tr>
+                                <tr class="tr tr_border-right">
+                                    <td>23.11.2020</td>
+                                    <td class="td td_left">Сызрань</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                    <td>32517</td>
+                                </tr>
+                                <tr class="tr tr_border-right">
+                                    <td>23.11.2020</td>
+                                    <td class="td td_left">Волгодонск</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>32517</td>
+                                </tr>
+                                <tr class="tr tr_grey">
+                                    <td class="td td_bold">Всего</td>
+                                    <td></td>
+                                    <td>6</td>
+                                    <td>6</td>
+                                    <td>1</td>
+                                    <td>117 534</td>
+                                </tr>
+                            </table>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="table__top">
+                                <p class="table__title table__title_nomargin">Сводная статистика по Ростов-на-Дону</p>
+                                <div class="table__select_1">
+                                    <select data-placeholder="день" class="select-date">
+                                        <option>день</option>
+                                        <option>с начала недели</option>
+                                        <option>за прошлый месяц</option>
+                                        <option>за конкретный день</option>
+                                    </select>
+                                </div>
+                                <p class="table__group">группировать</p>
+                                <label class="label">
+                                    <input class="checkbox checkbox_orange" type="checkbox">
+                                    <span class ="fake fake_orange"></span>
+                                </label>
+                            </div>
+                            <div class="table-scroll">
+                            <table class="table table_t3  table-page1">
+                                <tr class='tr tr_title tr_orange'>
+                                    <th>Дата</th>
+                                    <th>Город</th>
+                                    <th>Менеджеры</th>
+                                    <th>Заявки ( в работе и завершённые )</th>
+                                    <th>Отказы</th>
+                                    <th>Товарооборот</th>
+                                </tr>
+                                <tr class="tr tr_border-right">
+                                    <td>23.11.2020</td>
+                                    <td class="td td_left">Ростов-на-Дону</td>
+                                    <td>3</td>
+                                    <td>3</td>
+                                    <td>0</td>
+                                    <td>32517</td>
+                                </tr>
+                                <tr class="tr tr_border-right">
+                                    <td>23.11.2020</td>
+                                    <td class="td td_left">Сызрань</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                    <td>32517</td>
+                                </tr>
+                                <tr class="tr tr_border-right">
+                                    <td>23.11.2020</td>
+                                    <td class="td td_left">Волгодонск</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>32517</td>
+                                </tr>
+                                <tr class="tr tr_grey">
+                                    <td class="td td_bold">Всего</td>
+                                    <td></td>
+                                    <td>6</td>
+                                    <td>6</td>
+                                    <td>1</td>
+                                    <td>117 534</td>
+                                </tr>
+                            </table>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <p class="table__title">Операторы по Ростов-на-Дону</p>
+                    <div class="table-scroll">
+                        <table class="table table_t4 table-page1">
+                            <tr class='tr tr_title tr_orange'>
+                                <th>Дата</th>
+                                <th>Оператор</th>
+                                <th>Всего</th>
+                                <th>В работе</th>
+                                <th>Завершённые</th>
+                                <th>Отказ</th>
+                            </tr>
+                            <tr class="tr">
+                                <td>23.11.2020</td>
+                                <td class="td td_bold td_left">Вика Сафронова<img src="images/pen.svg" alt="" class="pen"></td>
+                                <td>3</td>
+                                <td>3</td>
+                                <td>0</td>
+                                <td class="td td_noborder">0</td>
+                            </tr>
+                            <tr class="tr">
+                                <td>23.11.2020</td>
+                                <td class="td td_bold td_left">Оператор Ирина<img src="images/pen.svg" alt="" class="pen"></td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>1</td>
+                                <td class="td td_noborder">1</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <p class="table__title">Выгрузка статистики</p>
+                    <div class="table__calendar ">
+                        <div class="calendar table-page1">
+                            <div class="calendar__content">
+                                <input type="text" id="datepicker1">
+                                <img src="images/calendar.svg" alt="" class="calendar__icon">
+                            </div>
+                        </div>
+                        <a href="" class="button button_orange">выгрузить статистику</a>
+                    </div>
+                    <p class="table__statistic"><span>выгрузка:</span>статистика Ростов-на-Дону 23.11.2020.xls</p>
+                </div>
+            </section>
+        </main>
+        
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+<div class="overlay1">
+    <div class="pop-up1">
+        <img src="images/exit.svg" alt="" class="pop-up1__exit">
+        <p class="pop-up1__title">ЗАГРУЗИТЬ АКТ</p>
+        <div class="pop-up1__content">
+            <div class="pop-up1__search">
+                <input type="text" class="pop-up1__input" placeholder="файл не выбран...">
+                <a href="" class="button button_orange pop-up1__review">обзор</a>
+            </div>
+            <p class="pop-up1__types">поддерживаются файлы: *.doc, *.txt, *.pdf</p>
+        </div> 
+        <div class="pop-up1__bottom">
+            <div class="pop-up1__files">
+                <p class="files__title">Загруженные файлы:</p>  
+                <div class="files__content">
+                    <p class="files__file">Акт выполненных работ_Антарес_12.17.2020.doc</p>
+                    <p class="files__discription">150 kb</p>
+                    <img src="images/cross.svg" alt="" class="files__icon">
+                </div>
+            </div>
+            <a class="pop-up1__button-big">Загрузить файл</a>
+        </div>
+    </div>
+</div>
+<div class="overlay2 modal2">
+    <div class="pop-up2">
+        <img src="images/exit.svg" alt="" class="pop-up2__exit modal2__exit">
+        <p class="pop-up2__title">СОЗДАТЬ ЗАЯВКУ</p>
+        <div class="pop-up2__content">
+
+            <div class="pop-up2__selects">
+                <div class="pop-up2__left">
+                    <div class="pop-up2__input-titles">
+                        <p>Координатор кому выдана заявка</p>
+                    </div>
+                    <select class="pop-up2__select" aria-placeholder="Одиночный выбор">
+                        <option value="">Одиночный выбор</option>
+                        <option value="">Одиночный выбор</option>
+                        <option value="">Одиночный выбор</option>
+                    </select>
+
+                    <div class="pop-up2__input-titles">
+                        <p>Оператор</p>
+                        <img src="images/star.svg" alt="" class="pop-up2__star">
+                    </div>
+                    <select class="pop-up2__select" aria-placeholder="Администратор">
+                        <option value="">Администратор</option>
+                        <option value="">Администратор</option>
+                        <option value="">Администратор</option>
+                    </select>
+
+                    <div class="pop-up2__input-titles">
+                        <p>Телефон</p>
+                        <img src="images/question.svg" alt="" class="pop-up2__question">
+                    </div>
+                    <input type="text" class="pop-up2__input" placeholder="Введите номер">
+
+                    <div class="pop-up2__input-titles">
+                        <p>Мобильный телефон</p>
+                        <img src="images/question.svg" alt="" class="pop-up2__question">
+                    </div>
+                    <input type="text" class="pop-up2__input" placeholder="Введите номер">
+
+                    <div class="pop-up2__input-titles">
+                        <p>Имя клиента</p>
+                        <img src="images/question.svg" alt="" class="pop-up2__question">
+                    </div>
+                    <input type="text" class="pop-up2__input" placeholder="Введите имя клиента">
+
+                    <div class="pop-up2__input-titles">
+                        <p>Колл-центр для заявки</p>
+                        <img src="images/star.svg" alt="" class="pop-up2__star">
+                    </div>
+                    <select class="pop-up2__select">
+                        <option value="">Координаторов</option>
+                        <option value="">Координаторов</option>
+                        <option value="">Координаторов</option>
+                    </select>
+                </div>
+                <div class="pop-up2__right">
+                    <p class="pop-up2__right-title">Адресс клиента</p>
+                    <div class="pop-up2__input-titles">
+                        <p>Город</p>
+                        <img src="images/star.svg" alt="" class="pop-up2__star">
+                    </div>
+                    <select class="pop-up2__select pop-up2__select_black">
+                        <option value="">Ростов-на-Дону</option>
+                        <option value="">Ростов-на-Дону</option>
+                        <option value="">Ростов-на-Дону</option>
+                    </select>
+
+                    <div class="pop-up2__input-titles">
+                        <p>Улица</p>
+                        <img src="images/star.svg" alt="" class="pop-up2__star">
+                        <img src="images/question.svg" alt="" class="pop-up2__question">
+                    </div>
+                    <input type="text" class="pop-up2__input">
+
+                    <div class="pop-up2__input-titles">
+                        <p>Дом</p>
+                        <img src="images/star.svg" alt="" class="pop-up2__star">
+                        <img src="images/question.svg" alt="" class="pop-up2__question">
+                    </div>
+                    <input type="text" class="pop-up2__input">
+
+                    <div class="pop-up2__input-titles">
+                        <p>Корпус</p>
+                        <img src="images/question.svg" alt="" class="pop-up2__question">
+                    </div>
+                    <input type="text" class="pop-up2__input">
+
+                    <div class="pop-up2__input-titles">
+                        <p>Квартира</p>
+                        <img src="images/question.svg" alt="" class="pop-up2__question">
+                    </div>
+                    <input type="text" class="pop-up2__input">
+                </div>
+            </div>
+
+            <div class="pop-up2__numbers">
+                <div class="pop-up2__number pop-up2__number">
+                    <div class="pop-up2__input-titles">
+                        <p>Количество</p>
+                        <img src="images/question.svg" alt="" class="pop-up2__question">
+                    </div>
+                    <div class="pop-up2__counters">
+                        <button class="decrease">-</button>
+                        <input type="number" class="pop-up2__input-number pop-up2__input-number_small">
+                        <button class="increase">+</button>
+                    </div>
+                </div>
+
+                <div class="pop-up2__number pop-up2__number">
+                    <div class="pop-up2__input-titles">
+                        <p>Лет</p>
+                        <img src="images/question.svg" alt="" class="pop-up2__question">
+                    </div>
+                    <div class="pop-up2__counters">
+                        <button class="decrease">-</button>
+                        <input type="number" class="pop-up2__input-number pop-up2__input-number_small">
+                        <button class="increase">+</button>
+                    </div>
+                </div>
+
+                <div class="pop-up2__number pop-up2__number">
+                    <div class="pop-up2__input-titles">
+                        <p>Товарооборот</p>
+                        <img src="images/question.svg" alt="" class="pop-up2__question">
+                    </div>
+                    <div class="pop-up2__counters">
+                        <button class="decrease">-</button>
+                        <input type="number" class="pop-up2__input-number pop-up2__input-number_big">
+                        <button class="increase">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pop-up2__input-titles">
+                <p>Комментарий</p>
+                <img src="images/question.svg" alt="" class="pop-up2__question">
+            </div>
+            <textarea class="pop-up2__textarea"></textarea>
+            <div class="pop-up2__dates">
+                <div class="pop-up2__date">
+                    <p class="date__title">Дата<img src="images/star.svg" alt="" class="pop-up2__star"></p>
+                    <img src="images/question.svg" alt="" class="pop-up2__question">
+                    <div class="date__calendar">
+                        <input type="text" id="datepicker5">
+                        <img src="images/cross.svg" alt="">
+                    </div>
+                    <img src="images/calendar.svg" alt="">
+                </div>
+                <div class="pop-up2__date">
+                    <p class="date__title">Время<img src="images/star.svg" alt="" class="pop-up2__star"></p>
+                    <img src="images/question.svg" alt="" class="pop-up2__question">
+                    <div class="date__calendar">
+                        <input type="text" id="datepicker4">
+                        <img src="images/cross.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="pop-up2__nav">
+                <a href="" class="button button_white"><img src="images/locate-orange.svg" alt="" class="locate_orange">На карте</a>
+                <div class="pop-up2__nav__left">
+                    <a href="" class="button button_blue-light">Убрать менеджера</a>
+                    <a href="" class="button button_green-light">Зашёл к клиенту</a>
+                    <a href="" class="button button_red-light button-long">Отказ</a>
+                </div>
+            </div>
+            <hr>
+            <div class="pop-up2__buttons">
+                <a href="" class="pop-up2__button pop-up2__button_grey">Отменить</a>
+                <a href="" class="pop-up2__button pop-up2__button_orange">Сохранить</a>
+            </div>
+        </div> 
+    </div>
+</div>
+
+<div class="overlay2 modal3">
+    <div class="pop-up2">
+        <img src="images/exit.svg" alt="" class="pop-up2__exit modal3__exit">
+        <p class="pop-up2__title">РЕДАКТИРОВАТЬ ЗАКАЗ</p>
+        <div class="pop-up2__content">
+
+            <div class="pop-up2__numbers">
+                <div class="pop-up2__number pop-up2__number">
+                    <div class="pop-up2__input-titles">
+                        <p>Цена всего</p>
+                        <img src="images/question.svg" alt="" class="pop-up2__question">
+                    </div>
+                    <div class="pop-up2__counters">
+                        <button class="decrease">-</button>
+                        <input type="number" class="pop-up2__input-number pop-up2__input-number_medium">
+                        <button class="increase">+</button>
+                    </div>
+                </div>
+
+                <div class="pop-up2__number pop-up2__number">
+                    <div class="pop-up2__input-titles">
+                        <p>Цена аванс</p>
+                        <img src="images/question.svg" alt="" class="pop-up2__question">
+                    </div>
+                    <div class="pop-up2__counters">
+                        <button class="decrease">-</button>
+                        <input type="number" class="pop-up2__input-number pop-up2__input-number_medium">
+                        <button class="increase">+</button>
+                    </div>
+                </div>
+
+                <div class="pop-up2__number pop-up2__number">
+                    <div class="pop-up2__input-titles">
+                        <p>Цена остаток</p>
+                        <img src="images/question.svg" alt="" class="pop-up2__question">
+                    </div>
+                    <div class="pop-up2__counters">
+                        <button class="decrease">-</button>
+                        <input type="number" class="pop-up2__input-number pop-up2__input-number_medium">
+                        <button class="increase">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pop-up2__input-titles">
+                <p>Перечень работ</p>
+                <img src="images/question.svg" alt="" class="pop-up2__question">
+            </div>
+            <textarea class="pop-up2__textarea pop-up2__textarea_big"></textarea>
+
+            <div class="pop-up2__files">
+                <div class="pop-up2__list">
+                    <p class="list__title">Загруженные файлы:</p>
+                    <div class="list__downloads">
+                        <div class="list__section">
+                            <p>Описание проекта.doc</p>
+                            <p class="list__kb">150 kb</p>
+                            <img src="images/cross.svg" alt="" class="list__cross">
+                        </div>
+                        <div class="list__section">
+                            <p>Смета.xls</p>
+                            <p class="list__kb">72 kb</p>
+                            <img src="images/cross.svg" alt="" class="list__cross">
+                        </div>
+                        <div class="list__section">
+                            <p>Фото объекта.jpg</p>
+                            <p class="list__kb">317 kb</p>
+                            <img src="images/cross.svg" alt="" class="list__cross">
+                        </div>
+                    </div>
+                    <div class="list__hr"></div>
+                </div>
+                <a href="" class="pop-up2__button pop-up2__button_big pop-up2__button_orange">Загрузить файл</a>
+            </div>
+
+            <div class="pop-up2__selects">
+                <div class="pop-up2__left">
+                    <div class="pop-up2__input-titles">
+                        <p>Телефон</p>
+                        <img src="images/question.svg" alt="" class="pop-up2__question">
+                    </div>
+                    <input type="text" class="pop-up2__input" placeholder="Введите номер">
+
+                    <div class="pop-up2__input-titles">
+                        <p>Мобильный телефон</p>
+                        <img src="images/question.svg" alt="" class="pop-up2__question">
+                    </div>
+                    <input type="text" class="pop-up2__input" placeholder="Введите номер">
+
+                    <div class="pop-up2__input-titles">
+                        <p>Имя клиента</p>
+                        <img src="images/question.svg" alt="" class="pop-up2__question">
+                    </div>
+                    <input type="text" class="pop-up2__input" placeholder="Введите имя клиента">
+
+                    <div class="pop-up2__input-titles">
+                        <p>Колл-центр для заказа</p>
+                    </div>
+                    <select class="pop-up2__select">
+                        <option value="">Координаторов</option>
+                        <option value="">Координаторов</option>
+                        <option value="">Координаторов</option>
+                    </select>
+
+                    <div class="pop-up2__input-titles">
+                        <p>Менеджер</p>
+                    </div>
+                    <select class="pop-up2__select">
+                        <option value="">Одиночный выбор</option>
+                        <option value="">Одиночный выбор</option>
+                        <option value="">Одиночный выбор</option>
+                    </select>
+                    <div class="pop-up2__input-titles">
+                        <p>Мастер</p>
+                    </div>
+                    <select class="pop-up2__select">
+                        <option value="">Одиночный выбор</option>
+                        <option value="">Одиночный выбор</option>
+                        <option value="">Одиночный выбор</option>
+                    </select>
+
+
+                    
+                </div>
+                <div class="pop-up2__right">
+                    <p class="pop-up2__right-title">Адресс клиента</p>
+                    <div class="pop-up2__input-titles">
+                        <p>Город</p>
+                        <img src="images/star.svg" alt="" class="pop-up2__star">
+                    </div>
+                    <select class="pop-up2__select pop-up2__select_black">
+                        <option value="">Ростов-на-Дону</option>
+                        <option value="">Ростов-на-Дону</option>
+                        <option value="">Ростов-на-Дону</option>
+                    </select>
+
+                    <div class="pop-up2__input-titles">
+                        <p>Улица</p>
+                        <img src="images/star.svg" alt="" class="pop-up2__star">
+                        <img src="images/question.svg" alt="" class="pop-up2__question">
+                    </div>
+                    <input type="text" class="pop-up2__input">
+
+                    <div class="pop-up2__input-titles">
+                        <p>Дом</p>
+                        <img src="images/star.svg" alt="" class="pop-up2__star">
+                        <img src="images/question.svg" alt="" class="pop-up2__question">
+                    </div>
+                    <input type="text" class="pop-up2__input">
+
+                    <div class="pop-up2__input-titles">
+                        <p>Корпус</p>
+                        <img src="images/question.svg" alt="" class="pop-up2__question">
+                    </div>
+                    <input type="text" class="pop-up2__input">
+
+                    <div class="pop-up2__input-titles">
+                        <p>Квартира</p>
+                        <img src="images/question.svg" alt="" class="pop-up2__question">
+                    </div>
+                    <input type="text" class="pop-up2__input">
+                </div>
+            </div>
+
+            
+
+            <div class="pop-up2__input-titles">
+                <p>Комментарий</p>
+                <img src="images/question.svg" alt="" class="pop-up2__question">
+            </div>
+            <textarea class="pop-up2__textarea"></textarea>
+            <div class="pop-up2__dates">
+                <div class="pop-up2__date">
+                    <p class="date__title">Дата<img src="images/star.svg" alt="" class="pop-up2__star"></p>
+                    <img src="images/question.svg" alt="" class="pop-up2__question">
+                    <div class="date__calendar">
+                        <input type="text" id="datepicker3">
+                        <img src="images/cross.svg" alt="">
+                    </div>
+                    <img src="images/calendar.svg" alt="">
+                </div>
+                <div class="pop-up2__date">
+                    <p class="date__title">Время<img src="images/star.svg" alt="" class="pop-up2__star"></p>
+                    <img src="images/question.svg" alt="" class="pop-up2__question">
+                    <div class="date__calendar">
+                        <input type="text" id="datepicker2">
+                        <img src="images/cross.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="pop-up2__nav">
+                <a href="" class="button button_white"><img src="images/download.svg" alt="" class="locate_orange">Загрузить акт</a>
+                <div class="pop-up2__nav__left">
+                    <a href="" class="button button_green-light button-long">Перенести</a>
+                    <a href="" class="button button_red-light button-long">Отказ</a>
+                </div>
+            </div>
+            <hr>
+            <div class="pop-up2__buttons">
+                <a href="" class="pop-up2__button pop-up2__button_grey">Отменить</a>
+                <a href="" class="pop-up2__button pop-up2__button_orange">Сохранить</a>
+            </div>
+        </div> 
+    </div>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        const headers = document.querySelectorAll("[data-name='spoiler-title']");
+        headers.forEach(function(item) {
+            item.addEventListener("click", headerClick);
+        });
+        function headerClick() {
+            this.classList.toggle('table__manager')
+            this.nextElementSibling.classList.toggle("show");
+        }
+
+        document.addEventListener('click', function (e) {
+            if (e.target.classList.contains("increase")) {
+                ++e.target.parentElement.querySelector("input").value;
+            } else if (e.target.classList.contains("decrease")) {
+                --e.target.parentElement.querySelector("input").value;
+            }
+        })
+    </script>
+    <script src="js/jquery-ui-timepicker-addon.min.js"></script>
+    <script>
+        $(function(){
+            $("#datepicker1").datepicker();
+            $("#datepicker2").datepicker();
+            $("#datepicker3").datepicker();
+            $("#datepicker4").timepicker();
+            $("#datepicker5").datepicker();
+        });
+        </script>
+    <script src="js/pop-up.js"></script>
+    <script src="chosen/chosen.jquery.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $(".pop-up2__select").chosen();
+            $(".chosen-select").chosen({width: "254px"}); 
+            $(".select-locale").chosen({width: "170px"});
+            $(".select-date").chosen({disable_search_threshold: 10})
+        });
+    </script>
+</div>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMS</title>
+
+    <link rel="stylesheet" href="css/resetCSS.css">
+    <link rel="stylesheet" href="css/default-style.css">
+
+    
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="images/logo.svg" alt="" class="header__logo">
+            <div class="header__burger">
+                <span></span>
+            </div>
+            <div class="header__content">
+                <div class="header__navigation">
+                    <ul class="header__list">
+                        <li>
+                            <a class="header__link">Главная</a>
+                        </li>
+                            <a class="header__link">Договора</a>
+                        </li>
+                        <li>
+                            <a class="header__link">Заказы</a>
+                        </li>
+                        <li>
+                            <a class="header__link">Заявки</a>
+                        </li>
+                        <li>
+                            <a class="header__link">КомПред</a>
+                        </li>
+                        <li>
+                            <a class="header__link">Менеджер</a>
+                        </li>
+                        <li>
+                            <a class="header__link">Отчеты</a>
+                        </li>
+                        <li>
+                            <a class="header__link">Руководитель</a>
+                        </li>
+                        <li>
+                            <a class="header__link">События</a>
+                        </li>
+                        <li>
+                            <a class="header__link">Карта</a>
+                        </li>
+                        <li>
+                            <a class="header__link">Справочники</a>
+                        </li>
+                        <li>
+                            <a class="header__link">Опции</a>
+                        </li>
+                        <li>
+                            <a class="header__link">adm-выйти</a>
+                        </li>
+                    </ul>
+                    <div class="header__info">
+                        <p class="header__info_text">Ваша роль:<span class="header__info_bold">Администратор</span>;</p>
+                        <p class="header__info_text">Ваш логин:<span class="header__info_bold">adm</span>;</p>
+                        <p class="header__info_text">Версия:<span class="header__info_bold">Na</span>;</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="title">
+                <p class="title__title">ADMS - БД - ФИНАНСОВЫЙ ОТЧЕТ</p>
+                <div class="title__info">
+                    <div class="title__link">
+                        <img src="images/locate.svg" alt="" class="title__icon">
+                        <p>Ростов-на-Дону</p>
+                    </div>
+                    <div class="title__link">
+                        <img src="images/locate.svg" alt="" class="title__icon">
+                        <p>Сургут</p>
+                    </div>
+                    <div class="title__link">
+                        <img src="images/locate.svg" alt="" class="title__icon">
+                        <p>Сургут</p>
+                    </div>
+                    <div class="title__link">
+                        <img src="images/locate.svg" alt="" class="title__icon">
+                        <p>Ставрополь</p>
+                    </div>
+                </div>
+            </section>
+            <section class="content">
+                <div class="table table-page13">
+                    <div class="table__calendar">
+                        <div class="calendar table-page13">
+                            <div class="calendar__title">Месяц<img src="images/question.svg" alt="" class="calendar__question"></div>
+                            <div class="calendar__content">
+                                <p class="calendar__date">11.2020<img src="images/cross.svg" alt="" class="calendar__cross"></p>
+                                <img src="images/calendar.svg" alt="" class="calendar__icon">
+                            </div>
+                        </div>
+                        <a href="" class="button button_orange">Сформировать отчёт</a>
+                    </div>
+                    <div class="table-scroll">
+                        <table class="table-page13">
+                            <tr class="tr tr_title tr_orange">
+                                <th>Дата</th>
+                                <th class="th th_left">Основание</th>
+                                <th>Дебет</th>
+                                <th>Кредит</th>
+                                <th>Сальдо</th>
+                                <th>Действие</th>
+                                <th>Загрузка</th>
+                            </tr>
+                            <tr class="tr tr_grey">
+                                <td>03.11.2020</td>
+                                <td class="td td_left">Остаток пошлого периода возможно 
+                                    в две строки</td>
+                                <td></td>
+                                <td></td>
+                                <td class="td td_green">271.320</td>
+                                <td><a href="" class="button button_green btn_margin">редактировать</a><a href="" class="button button_red btn_margin">удалить</a></td>
+                                <td class="td td_border"><a href="" class="button button_white"><img src="images/download.svg" alt="" class="button_icon">Загрузить документ</a></td>
+                            </tr>
+                            <tr class="tr tr_grey">
+                                <td>23.11.2020</td>
+                                <td class="td td_left">Подотчёт</td>
+                                <td>90000</td>
+                                <td>0.00</td>
+                                <td class="td td_green">310.000</td>
+                                <td><a href="" class="button button_green btn_margin">редактировать</a><a href="" class="button button_red btn_margin">удалить</a></td>
+                                <td class="td td_border"><a href="" class="button button_white"><img src="images/download.svg" alt="" class="button_icon">Загрузить документ</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <div class="overlay1">
+            <div class="pop-up1">
+                <img src="images/exit.svg" alt="" class="pop-up1__exit">
+                <p class="pop-up1__title">ЗАГРУЗИТЬ АКТ</p>
+                <div class="pop-up1__content">
+                    <div class="pop-up1__search">
+                        <input type="text" class="pop-up1__input" placeholder="файл не выбран...">
+                        <a href="" class="button button_orange pop-up1__review">обзор</a>
+                    </div>
+                    <p class="pop-up1__types">поддерживаются файлы: *.doc, *.txt, *.pdf</p>
+                </div> 
+                <div class="pop-up1__bottom">
+                    <div class="pop-up1__files">
+                        <p class="files__title">Загруженные файлы:</p>  
+                        <div class="files__content">
+                            <p class="files__file">Акт выполненных работ_Антарес_12.17.2020.doc</p>
+                            <p class="files__discription">150 kb</p>
+                            <img src="images/cross.svg" alt="" class="files__icon">
+                        </div>
+                    </div>
+                    <a class="pop-up1__button-big">Загрузить файл</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

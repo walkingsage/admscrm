@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMS</title>
+    <link rel="stylesheet" href="chosen/chosen.css">
+    <link rel="stylesheet" href="css/resetCSS.css">
+    <link rel="stylesheet" href="css/default-style.css">
+
+    
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="images/logo.svg" alt="" class="header__logo">
+            <div class="header__burger">
+                <span></span>
+            </div>
+            <div class="header__content">
+                <div class="header__navigation">
+                    <ul class="header__list">
+                        <li>
+                            <a class="header__link">Главная</a>
+                        </li>
+                            <a class="header__link">Договора</a>
+                        </li>
+                        <li>
+                            <a class="header__link">Заказы</a>
+                        </li>
+                        <li>
+                            <a class="header__link">Заявки</a>
+                        </li>
+                        <li>
+                            <a class="header__link">КомПред</a>
+                        </li>
+                        <li>
+                            <a class="header__link">Менеджер</a>
+                        </li>
+                        <li>
+                            <a class="header__link">Отчеты</a>
+                        </li>
+                        <li>
+                            <a class="header__link">Руководитель</a>
+                        </li>
+                        <li>
+                            <a class="header__link">События</a>
+                        </li>
+                        <li>
+                            <a class="header__link">Карта</a>
+                        </li>
+                        <li>
+                            <a class="header__link">Справочники</a>
+                        </li>
+                        <li>
+                            <a class="header__link">Опции</a>
+                        </li>
+                        <li>
+                            <a class="header__link">adm-выйти</a>
+                        </li>
+                    </ul>
+                    <div class="header__info">
+                        <p class="header__info_text">Ваша роль:<span class="header__info_bold">Администратор</span>;</p>
+                        <p class="header__info_text">Ваш логин:<span class="header__info_bold">adm</span>;</p>
+                        <p class="header__info_text">Версия:<span class="header__info_bold">Na</span>;</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="title">
+                <p class="title__title">ADMS - БД - ЗАКАЗЫ</p>
+                <div class="title__info">
+                    <div class="title__link">
+                        <img src="images/locate.svg" alt="" class="title__icon">
+                        <select data-placeholder="день" class="select-locale">
+                            <option>Ростов-на-Дону</option>
+                            <option>Москва</option>
+                            <option>Санкт-Петербург</option>
+                            <option>Екатеренбург</option>
+                        </select>
+                    </div>
+                    <div class="title__link">
+                        <img src="images/person.svg" alt="" class="title__icon">
+                        <p>Менеджер</p>
+                    </div>
+                </div>
+                <div class="title__buttons">
+                    <div class="title__button modal2__open">
+                        <button type="button" class="btn-plus"></button>
+                        <p class="modal2__text">Создать заявку</p>
+                    </div>
+                    <div class="title__button modal3__open">
+                        <button type="button" class="reboot"></button>
+                        <p>Обновить</p>
+                    </div>
+                </div>
+            </section>
+            <section class="content">
+                <div class="table table-page2">
+                    <div class="table__top">
+                        <p class="table__title">Заказы по городу Ростов-на-Дону</p>
+                        <div class="table__btns">
+                            <a href="" class="button button_blue table__btn">отобразить заказы за весь месяц</a>
+                            <a href="" class="button button_blue table__btn">показаны все заявки</a>
+                            <a href="" class="button button_blue table__btn">автообновление</a>
+                        </div>
+                    </div>
+                    <div class="table-scroll">
+                        <table class="table-page2">
+                            <tr class="tr tr_title tr_orange">
+                                <th>№</th>
+                                <th>Клиент</th>
+                                <th>Телефоны</th>
+                                <th>Адрес</th>
+                                <th>Перечень работ</th>
+                                <th>Цена</th>
+                                <th>Дата профилактики</th>
+                                <th>Комментарий</th>
+                                <th>Время</th>
+                                <th>Менеджер</th>
+                                <th>Мастер</th>
+                                <th>Статус</th>
+                            </tr>
+                            <tr class="tr tr_grey">
+                                <td>3364</td>
+                                <td>Иванов Иван</td>
+                                <td><p class="td td__small">542-58-73  899 933-4-47-61</p></td>
+                                <td class="td td__small">ул.Коммунистическая, д43, кв.55</td>
+                                <td></td>
+                                <td>
+                                    <p>
+                                        всего:<span class="td_bold">150 000</span><br>
+                                        аванс:<span class="td_bold">75 000</span><br>
+                                        отстаток:<span class="td_bold">75 000</span><br>
+                                    </p>
+                                </td>
+                                <td></td>
+                                <td class="td td_left"></td>
+                                <td>12:00</td>
+                                <td>Кивалов Олег</td>
+                                <td>Оператор Ирина</td>
+                                <td class="td_status">не назначена <br><br><a href="#" class="button button_orange td_margin">Загрузить акт</a></td>
+                            </tr>
+                            <tr class="tr tr_yellow">
+                                <td>3364</td>
+                                <td>Иванов Иван</td>
+                                <td><p class="td td__small">542-58-73  899 933-4-47-61</p></td>
+                                <td class="td td__small">ул.Коммунистическая, д43, кв.55</td>
+                                <td></td>
+                                <td>
+                                    <p>
+                                        всего:<span class="td_bold">150 000</span><br>
+                                        аванс:<span class="td_bold">75 000</span><br>
+                                        отстаток:<span class="td_bold">75 000</span><br>
+                                    </p>
+                                </td>
+                                <td></td>
+                                <td class="td td_left">Установка круглого окнака в мансарду, заказчик знает о сложностях монтажа и 
+                                    возможных увеличеных расходах на изготовление профиля</td>
+                                <td>12:00</td>
+                                <td>Кивалов Олег</td>
+                                <td>Оператор Ирина</td>
+                                <td class="td_status">не назначена <br><br><a href="#" class="button button_orange td_margin">Загрузить акт</a></td>
+                            </tr>
+                            <tr class="tr tr_yellow">
+                                <td>3364</td>
+                                <td>Иванов Иван</td>
+                                <td><p class="td td__small">542-58-73  899 933-4-47-61</p></td>
+                                <td class="td td__small">ул.Коммунистическая, д43, кв.55</td>
+                                <td></td>
+                                <td>
+                                    <p>
+                                        всего:<span class="td_bold">150 000</span><br>
+                                        аванс:<span class="td_bold">75 000</span><br>
+                                        отстаток:<span class="td_bold">75 000</span><br>
+                                    </p>
+                                </td>
+                                <td></td>
+                                <td class="td td_left"></td>
+                                <td>12:00</td>
+                                <td>Кивалов Олег</td>
+                                <td>Оператор Ирина</td>
+                                <td class="td_status">назначена <br><br><a href="#" class="button button_orange td_margin">Загрузить акт</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="table__slider">
+                        <img src="images/switch1.svg" class="slider__switch slider__switch_switch1">
+                        <p class="slider__dots">...</p>
+                        <p class="slider__number">5</p>
+                        <p class="slider__number">6</p>
+                        <p class="slider__number">7</p>
+                        <p class="slider__dots">...</p>
+                        <img src="images/switch2.svg" class="slider__switch slider__switch_switch2">
+                    </div>
+                    <div class="table__date">
+                        <div class="table__select_1 nopad">
+                            <select data-placeholder="2020" class="select-date">
+                                <option>2020</option>
+                                <option>2019</option>
+                                <option>2018</option>
+                                <option>2017</option>
+                            </select>
+                        </div>
+                        <div class="table__select_1 nopad">
+                            <select data-placeholder="ноябрь" class="select-date">
+                                <option>Ноябрь</option>
+                                <option>октябрь</option>
+                                <option>февраль</option>
+                                <option>март</option>
+                            </select>
+                        </div>
+                        <div class="table__select_1 nopad">
+                            <select data-placeholder="17" class="select-date">
+                                <option>17</option>
+                                <option>16</option>
+                                <option>15</option>
+                                <option>14</option>
+                            </select>
+                        </div>
+                        <img src="images/calendar.svg" alt="" class="table__calendar">
+                    </div>
+                    <div class="table__bottom">
+                        <p class="bottom__title">Печать</p>
+                        <div class="bottom__buttons">
+                            <div class="table__select_1 nopad">
+                                <select data-placeholder="Одиночный вариант" class="select-date">
+                                    <option>Одиночный вариант</option>
+                                    <option>Не одиночный вариант</option>
+                                </select>
+                            </div>
+                            <a href="#" class="button button_orange pop-up1__open">Печать</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <div class="overlay1">
+            <div class="pop-up1">
+                <img src="images/exit.svg" alt="" class="pop-up1__exit">
+                <p class="pop-up1__title">ЗАГРУЗИТЬ АКТ</p>
+                <div class="pop-up1__content">
+                    <div class="pop-up1__search">
+                        <input type="text" class="pop-up1__input" placeholder="файл не выбран...">
+                        <a href="" class="button button_orange pop-up1__review">обзор</a>
+                    </div>
+                    <p class="pop-up1__types">поддерживаются файлы: *.doc, *.txt, *.pdf</p>
+                </div> 
+                <div class="pop-up1__bottom">
+                    <div class="pop-up1__files">
+                        <p class="files__title">Загруженные файлы:</p>  
+                        <div class="files__content">
+                            <p class="files__file">Акт выполненных работ_Антарес_12.17.2020.doc</p>
+                            <p class="files__discription">150 kb</p>
+                            <img src="images/cross.svg" alt="" class="files__icon">
+                        </div>
+                    </div>
+                    <a class="pop-up1__button-big">Загрузить файл</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="chosen/chosen.jquery.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $(".pop-up2__select").chosen();
+            $(".chosen-select").chosen({width: "254px"}); 
+            $(".select-locale").chosen({width: "170px"});
+            $(".select-date").chosen({width: "100%"})
+        });
+    </script>
+</body>
+</html>

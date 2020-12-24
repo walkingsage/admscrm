@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMS</title>
+    <link rel="stylesheet" href="chosen/chosen.css">
+    <link rel="stylesheet" href="css/resetCSS.css">
+    <link rel="stylesheet" href="css/default-style.css">
+
+    
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="images/logo.svg" alt="" class="header__logo">
+            <div class="header__burger">
+                <span></span>
+            </div>
+            <div class="header__content">
+                <div class="header__navigation">
+                    <ul class="header__list">
+                        <li>
+                            <a class="header__link">Главная</a>
+                        </li>
+                            <a class="header__link">Договора</a>
+                        </li>
+                        <li>
+                            <a class="header__link">Заказы</a>
+                        </li>
+                        <li>
+                            <a class="header__link">Заявки</a>
+                        </li>
+                        <li>
+                            <a class="header__link">КомПред</a>
+                        </li>
+                        <li>
+                            <a class="header__link">Менеджер</a>
+                        </li>
+                        <li>
+                            <a class="header__link">Отчеты</a>
+                        </li>
+                        <li>
+                            <a class="header__link">Руководитель</a>
+                        </li>
+                        <li>
+                            <a class="header__link">События</a>
+                        </li>
+                        <li>
+                            <a class="header__link">Карта</a>
+                        </li>
+                        <li>
+                            <a class="header__link">Справочники</a>
+                        </li>
+                        <li>
+                            <a class="header__link">Опции</a>
+                        </li>
+                        <li>
+                            <a class="header__link">adm-выйти</a>
+                        </li>
+                    </ul>
+                    <div class="header__info">
+                        <p class="header__info_text">Ваша роль:<span class="header__info_bold">Администратор</span>;</p>
+                        <p class="header__info_text">Ваш логин:<span class="header__info_bold">adm</span>;</p>
+                        <p class="header__info_text">Версия:<span class="header__info_bold">Na</span>;</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="title">
+                <p class="title__title">ADMS - БД - ОТЧЕТ ПО ОПЕРАТОРАМ</p>
+            </section>
+            <section class="content">
+                <div class="table table-page11">
+                    <div class="table__calendar">
+                        <div class="calendar table-page11">
+                            <div class="calendar__title">Начало отчёта<img src="images/star.svg" alt="" class="calendar__star"><img src="images/question.svg" alt="" class="calendar__question"></div>
+                            <div class="calendar__content">
+                                <p class="calendar__date"><input type="text" id="datepicker10"><img src="images/cross.svg" alt="" class="calendar__cross"></p>
+                                <img src="images/calendar.svg" alt="" class="calendar__icon">
+                            </div>
+                        </div>
+                        <div class="calendar table-page11 calendar_right">
+                            <div class="calendar__title">Конец отчёта<img src="images/star.svg" alt="" class="calendar__star"><img src="images/question.svg" alt="" class="calendar__question"></div>
+                            <div class="calendar__content">
+                                <p class="calendar__date"><input type="text" id="datepicker11"><img src="images/cross.svg" alt="" class="calendar__cross"></p>
+                                <img src="images/calendar.svg" alt="" class="calendar__icon">
+                            </div>
+                        </div>
+                        <a href="" class="button button_orange">Сформировать отчёт</a>
+                    </div>
+                    <div class="table-scroll">
+                        <table class="table table_t1 table-page11">
+                            <tr class="tr tr_title tr_orange">
+                                <th>Дата</th>
+                                <th>Оператор</th>
+                                <th>Количество 
+                                    назначенных 
+                                    заявок</th>
+                                <th>Количество 
+                                    завершённых
+                                    заявок</th>
+                                <th>Количество
+                                    отказов</th>
+                            </tr>
+                            <tr class="tr tr_grey">
+                                <td>23.11.2020</td>
+                                <td class="td td_left">Вика Сафронова</td>
+                                <td>3</td>
+                                <td class="td td_green">3</td>
+                                <td class="td td_red td_border">0</td>
+                            </tr>
+                            <tr class="tr tr_grey">
+                                <td>24.11.2020</td>
+                                <td class="td td_left">Оператор Ирина</td>
+                                <td>2</td>
+                                <td class="td td_green">2</td>
+                                <td class="td td_red td_border">1</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="table-scroll">
+                        <table class="table table_t2 table-page11">
+                            <tr class="tr tr_title tr_orange">
+                                <th>Дата</th>
+                                <th>Оператор</th>
+                                <th>Город</th>
+                                <th>Количество 
+                                    назначенных 
+                                    заявок</th>
+                                <th>Количество 
+                                    завершённых
+                                    заявок</th>
+                                <th>Количество
+                                    отказов</th>
+                            </tr>
+                            <tr class="tr tr_grey">
+                                <td>23.11.2020</td>
+                                <td class="td td_left">Вика Сафронова</td>
+                                <td>Ростов-на-Дону</td>
+                                <td>3</td>
+                                <td class="td td_green">3</td>
+                                <td class="td td_red td_border">0</td>
+                            </tr>
+                            <tr class="tr tr_grey">
+                                <td>24.11.2020</td>
+                                <td class="td td_left">Оператор Ирина</td>
+                                <td>Красноярск</td>
+                                <td>2</td>
+                                <td class="td td_green">2</td>
+                                <td class="td td_red td_border">1</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="table-scroll">
+                        <table class="table table_t3 table-page11">
+                            <tr class="tr tr_title tr_orange">
+                                <th>Дата</th>
+                                <th colspan="2">Вика Сафронова</th>
+                                <th colspan="2">Оператор Ирина</th>
+                                <th colspan="2">Оператор Светлана</th>
+                            </tr>
+                            <tr class="tr tr_grey">
+                                <td>23.11.2020</td>
+                                <td class="td td_green">3</td>
+                                <td class="td td_red">0</td>
+                                <td class="td td_green">3</td>
+                                <td class="td td_red">1</td>
+                                <td class="td td_green">3</td>
+                                <td class="td td_red td_border">1</td>
+                            </tr>
+                            <tr class="tr tr_grey">
+                                <td>24.11.2020</td>
+                                <td class="td td_green">2</td>
+                                <td class="td td_red">1</td>
+                                <td class="td td_green">2</td>
+                                <td class="td td_red">1</td>
+                                <td class="td td_green">2</td>
+                                <td class="td td_red td_border">1</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <div class="overlay1">
+            <div class="pop-up1">
+                <img src="images/exit.svg" alt="" class="pop-up1__exit">
+                <p class="pop-up1__title">ЗАГРУЗИТЬ АКТ</p>
+                <div class="pop-up1__content">
+                    <div class="pop-up1__search">
+                        <input type="text" class="pop-up1__input" placeholder="файл не выбран...">
+                        <a href="" class="button button_orange pop-up1__review">обзор</a>
+                    </div>
+                    <p class="pop-up1__types">поддерживаются файлы: *.doc, *.txt, *.pdf</p>
+                </div> 
+                <div class="pop-up1__bottom">
+                    <div class="pop-up1__files">
+                        <p class="files__title">Загруженные файлы:</p>  
+                        <div class="files__content">
+                            <p class="files__file">Акт выполненных работ_Антарес_12.17.2020.doc</p>
+                            <p class="files__discription">150 kb</p>
+                            <img src="images/cross.svg" alt="" class="files__icon">
+                        </div>
+                    </div>
+                    <a class="pop-up1__button-big">Загрузить файл</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        $(function(){
+            $("#datepicker10").datepicker();
+            $("#datepicker11").datepicker();;
+        });
+    </script>
+</body>
+</html>
