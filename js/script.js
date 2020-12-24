@@ -1,3 +1,6 @@
+const fileList = document.querySelector('.file__list'),
+fileLoader = document.getElementById('fileLoader');
+
 $(document).ready(function(){
     $('.header__burger').click(function(event){
         $('.header__burger,.header__navigation').toggleClass('active');
@@ -18,4 +21,8 @@ $('.select__button_2').on('mouseover', function() {
 $('.select__button_2').click(function() {
     $('.select__menu_2').css('display','none');
 });
+
+
+
+
 
