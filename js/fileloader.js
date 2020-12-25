@@ -45,12 +45,33 @@
 const fileKeys = document.querySelector('.file__list');
 let filesName = [];
 let filesSize = [];
-
+let deleteBtn;
+let fileInffo;
   $('form input[type=file]').on('change', function() {
     for (var i = 0; i < this.files.length; i++) {
         filesName.push(this.files[i].name);
         filesSize.push(this.files[i].size);
-        fileKeys.insertAdjacentHTML('beforeend', `<div class="file__info"><div class="file__name">${filesName[i]}</div><div class="file__size">${Math.floor(filesSize[i]/1024) + "кб"}</div> <span class="delete"></span></div>`);
+        fileKeys.insertAdjacentHTML('beforeend', `<div class="file__info"><div class="file__name">${filesName[i]}</div><div class="file__size">${Math.floor(filesSize[i]/1024) + "кб"}</div> <span class="delete">&times;</span></div>`);
+        $('.files__load__tag').text("Файлы успешно загружены");
     }
+    deleteBtn = document.querySelectorAll('.file__info > .delete');
+    deleteBtn.forEach((element,i) => {
+        fileInffo = document.querySelectorAll('.file__info');
+        element.addEventListener('click', () => {
+            fileInffo[i].remove();
+        });
+    });
+});
+
+let modalOpen = false;
+
+$(".td_margin").on('click', function(){
+    $(".overlay1").css("display", "block");
+    modalOpen = true;
+});
+
+$(".pop-up1__exit").on('click', () => {
+    $(".overlay1").css("display", "none");
+    modalOpen = false;
 });
 

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADMS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="chosen/chosen.css">
     <link rel="stylesheet" href="css/resetCSS.css">
     <link rel="stylesheet" href="css/default-style.css">    
@@ -286,7 +287,13 @@
                         <div class="title">
                             Загрузить акт
                         </div>
-                        <input onchange="handleChange" type="file" id="fileLoader" accept=".doc,.txt,.pdf,.docx" name="file[]" multiple/>
+                        <div class="input__upload">
+                            <input type="file" id="fileLoader" accept=".doc,.txt,.pdf,.docx" name="file[]" multiple/>
+                            <div class="files__load__tag">файл не выбран...</div>
+                            <label for="fileLoader">
+                                <div class="button__load">обзор</div>
+                            </label>
+                        </div>
                         <p class="about">поддерживаются файлы: *.doc, *.txt, *.pdf</p>
                         <div class="bottom">
                             <div class="files__stack">
@@ -295,7 +302,7 @@
         
                                 </div>
                             </div>
-                            <input type="submit" value="Загрузить файл"></input>
+                            <input class="upload__btn" type="submit" value="Загрузить файл"></input>
                         </div>
                     </div>
                 </form>
