@@ -264,8 +264,54 @@ body {
 .adress .location:hover path {
   fill: #ffa000; }
 
-.modal__filter .create__account .position {
-  justify-content: flex-end; }
+.modal__body .container {
+  position: relative;
+  display: grid; }
+
+.overlay1 .create__account {
+  height: auto;
+  width: 520px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+  .overlay1 .create__account .line {
+    align-items: center; }
+  .overlay1 .create__account .position {
+    justify-content: flex-end;
+    margin-bottom: 0;
+    width: 138px;
+    margin-top: 8px; }
+  .overlay1 .create__account .email {
+    width: 218px; }
+  .overlay1 .create__account #allline, .overlay1 .create__account #allline1, .overlay1 .create__account #allline2 {
+    margin-top: 0;
+    width: 366px;
+    margin-bottom: 20px; }
+    .overlay1 .create__account #allline .position__input, .overlay1 .create__account #allline1 .position__input, .overlay1 .create__account #allline2 .position__input {
+      width: 100%; }
+  .overlay1 .create__account .result__btn {
+    margin-top: 20px; }
+    .overlay1 .create__account .result__btn .close {
+      width: 46.875%; }
+    .overlay1 .create__account .result__btn .submit {
+      width: 46.875%; }
+  .overlay1 .create__account .line__figur {
+    height: 1px;
+    width: 100%;
+    background-color: #c6c6c6; }
+  .overlay1 .create__account .add {
+    width: 104px;
+    height: 36px;
+    background: #FFA000;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    margin-top: 8px; }
 
 .x-field {
   display: inline;
@@ -793,7 +839,7 @@ body {
   display: flex;
   justify-content: space-between; }
   .create__content .line .email__input {
-    width: 100%; }
+    width: 100% !important; }
   .create__content .line .red {
     color: red; }
 .create__content .subtitle {
