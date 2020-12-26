@@ -21,12 +21,12 @@
                 <div class="header__navigation">
                     <ul class="header__list">
                         <li>
-                            <a class="header__link">Главная</a>
+                            <a href="page-1.html" class="header__link">Главная</a>
                         </li>
                             <a class="header__link">Договора</a>
                         </li>
                         <li>
-                            <a class="header__link">Заказы</a>
+                            <a href="page-2.html" class="header__link">Заказы</a>
                         </li>
                         <li>
                             <a class="header__link">Заявки</a>
@@ -34,29 +34,25 @@
                         <li>
                             <a class="header__link">КомПред</a>
                         </li>
-                        <li>
-                            <a class="header__link">Менеджер</a>
-                        </li>
-                        <li>
-                            <a class="header__link">Отчеты</a>
-                        </li>
-                        <li>
-                            <a class="header__link">Руководитель</a>
-                        </li>
-                        <li>
-                            <a class="header__link">События</a>
-                        </li>
-                        <li>
-                            <a class="header__link">Карта</a>
-                        </li>
-                        <li>
-                            <a class="header__link">Справочники</a>
+                        <li class="menu__item">
+                            <a class="header__link bold">Справочники</a>
+                            <ul class="menu__item__submenu">
+                                <li class="menu__item__submenu__subitem">
+                                    <span class="menu__item__submenu__treugolnik"></span>
+                                    <span class="menu__item__submenu__treugolnik__border"></span>
+                                    <a href="#" class="header__link__sub">Категории контрагентов</a>
+                                </li>
+                                <li class="menu__item__submenu__subitem"><a href="#" class="header__link__sub">Е-mail</a></li>
+                                <li class="menu__item__submenu__subitem"><a href="#" class="header__link__sub">Города контрагентов</a></li>
+                                <li class="menu__item__submenu__subitem"><a href="#" class="header__link__sub">Колл-центры</a></li>
+                                <li class="menu__item__submenu__subitem"><a href="#" class="header__link__sub">Мастера</a></li>
+                            </ul>
                         </li>
                         <li>
                             <a class="header__link">Опции</a>
                         </li>
                         <li>
-                            <a class="header__link">adm-выйти</a>
+                            <a class="header__link">adm: выйти</a>
                         </li>
                     </ul>
                     <div class="header__info">
@@ -86,12 +82,28 @@
                     </div>
                 </div>
                 <div class="title__buttons">
-                    <div class="title__button modal2__open">
-                        <button type="button" class="btn-plus"></button>
-                        <p class="modal2__text">Создать заявку</p>
-                    </div>
                     <div class="title__button modal3__open">
-                        <button type="button" class="reboot"></button>
+                        <div class="octagon">
+                            <svg class="hex" id="hex1" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_d)">
+                                <path d="M23.855 6.54664C24.2123 6.54664 24.5424 6.73724 24.721 7.04664L30.6903 17.3857C30.869 17.6951 30.869 18.0763 30.6903 18.3857L24.721 28.7249C24.5424 29.0343 24.2123 29.2249 23.855 29.2249L11.9164 29.2249C11.5592 29.2249 11.2291 29.0343 11.0504 28.7249L5.08113 18.3857C4.9025 18.0763 4.9025 17.6951 5.08113 17.3857L11.0504 7.04664C11.2291 6.73724 11.5592 6.54664 11.9164 6.54664L23.855 6.54664Z" fill="#FFA000"/>
+                                </g>
+                                <defs>
+                                <filter id="filter0_d" x="0.596497" y="0.0110474" width="36.5785" height="37.7494" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                                <feOffset dx="1" dy="1"/>
+                                <feGaussianBlur stdDeviation="1"/>
+                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                                </filter>
+                                </defs>
+                            </svg>
+                            <svg class="plus" id="refresh" width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.92432 5.17969C4.17562 4.93449 4.57051 4.93449 4.80386 5.19855C5.0372 5.46261 5.0372 5.87756 4.76796 6.12276L2.88324 8.04664C2.77554 8.17867 2.61399 8.23525 2.47039 8.23525C2.2909 8.25412 2.12935 8.17867 2.0037 8.04664L0.172828 6.06618C-0.060518 5.80212 -0.060518 5.38716 0.190778 5.14196C0.442074 4.89676 0.836968 4.89676 1.07031 5.14196L1.896 6.02845C1.896 6.04732 1.91395 6.06618 1.9319 6.08504C2.09345 3.04833 4.22947 0.539749 7.13732 0.0682108C9.36308 -0.271297 11.5889 0.67178 12.953 2.55793C13.0069 2.63338 13.0428 2.72769 13.0607 2.82199C13.0787 3.02947 13.0069 3.23695 12.8453 3.36898C12.7735 3.42556 12.6838 3.46329 12.594 3.48215C12.3966 3.50101 12.1991 3.42556 12.0735 3.25581C10.9427 1.6903 9.12974 0.91698 7.29887 1.21876C4.9295 1.59599 3.18838 3.61418 3.04478 6.08504L3.15248 5.97187L3.92432 5.17969ZM13.9941 4.95336L15.825 6.93382C16.0583 7.19788 16.0583 7.61284 15.825 7.85804C15.5737 8.10324 15.1788 8.10324 14.9455 7.83918L14.1198 6.95268L14.0659 6.8961C13.9223 9.93281 11.7684 12.4414 8.8605 12.9318C6.63473 13.2713 4.40897 12.3282 3.04479 10.4421C2.99094 10.3666 2.95504 10.2723 2.93709 10.178C2.90119 9.97053 2.99094 9.76305 3.15249 9.63102C3.22429 9.57444 3.31403 9.53671 3.40378 9.51785C3.60123 9.49899 3.79868 9.57444 3.92433 9.74419C5.03721 11.2908 6.86808 12.0642 8.69895 11.7812C11.0504 11.404 12.7915 9.38582 12.953 6.93382L12.8633 7.02813L12.0914 7.82031C11.8402 8.06551 11.4453 8.06551 11.2119 7.80145C10.9786 7.53739 10.9786 7.12244 11.2299 6.87724L13.1146 4.95336C13.2223 4.82133 13.3838 4.76475 13.5274 4.76475C13.7069 4.74588 13.8685 4.82133 13.9941 4.95336Z" fill="white"/>
+                            </svg>
+                        </div>
                         <p>Обновить</p>
                     </div>
                 </div>

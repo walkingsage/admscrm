@@ -268,6 +268,113 @@ body {
   position: relative;
   display: grid; }
 
+.autorization {
+  width: 300px; }
+  .autorization .create__account {
+    width: 100%;
+    height: auto;
+    margin-top: 0 !important; }
+  .autorization .its__me {
+    margin-bottom: 20px; }
+    .autorization .its__me .save__me {
+      display: flex;
+      position: relative;
+      align-items: center;
+      cursor: pointer; }
+      .autorization .its__me .save__me #itsme {
+        position: absolute;
+        width: 0;
+        height: 0;
+        opacity: 0; }
+      .autorization .its__me .save__me .fake__checkbox {
+        width: 14px;
+        height: 14px;
+        border: 2px solid #FFA000;
+        box-sizing: border-box;
+        border-radius: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+      .autorization .its__me .save__me #itsme:checked ~ .fake__checkbox:before {
+        display: block; }
+      .autorization .its__me .save__me .fake__checkbox:before {
+        display: none;
+        content: "";
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background: #FFA000;
+        border-radius: 2px;
+        transition-duration: .5s; }
+      .autorization .its__me .save__me .about {
+        margin-left: 10px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+        color: #000000;
+        font-family: 'Open Sans', sans-serif; }
+  .autorization #forgot__pass {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #053A7F;
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: #053A7F;
+    -moz-text-decoration-color: #053A7F;
+    text-align: center; }
+  .autorization .result__btn input {
+    width: 100% !important; }
+  .autorization .email__input {
+    width: 100% !important; }
+    .autorization .email__input input {
+      width: 100%; }
+
+#forgot .create__account {
+  background-color: #F03C14; }
+#forgot .about {
+  color: #ffffff; }
+
+.succes {
+  width: 227px; }
+  .succes .create__account {
+    width: 100%;
+    height: auto;
+    margin-top: 0 !important; }
+  .succes .title {
+    margin-bottom: 0 !important; }
+  .succes svg {
+    align-self: center; }
+  .succes .about {
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #C4C4C4;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin-bottom: 5px; }
+  .succes .result__btn {
+    margin-top: 0 !important; }
+    .succes .result__btn input {
+      width: 100% !important; }
+
+.forgot__pass__modal {
+  width: 340px; }
+  .forgot__pass__modal .create__account {
+    width: 100%;
+    height: auto;
+    margin-top: 0 !important; }
+  .forgot__pass__modal .result__btn {
+    margin-top: 0 !important; }
+    .forgot__pass__modal .result__btn input {
+      width: 100% !important; }
+  .forgot__pass__modal .email__input {
+    width: 100% !important; }
+    .forgot__pass__modal .email__input input {
+      width: 100%; }
+
 .overlay1 .create__account {
   height: auto;
   width: 520px;
@@ -328,6 +435,9 @@ body {
 
 .calendar__img {
   margin: 0 20px; }
+
+#fw {
+  width: 100%; }
 
 .calendar__img:hover path {
   fill: #ffa000;
@@ -877,6 +987,9 @@ body {
   .header {
     padding: 19px 0; }
 
+  .menu__item__submenu {
+    left: 0; }
+
   .header__burger {
     display: block;
     position: fixed;
@@ -936,7 +1049,6 @@ body {
   .header__navigation.active {
     margin-top: 25px; }
   .header__list {
-    height: 300px;
     margin: 0;
     flex-direction: column;
     justify-content: space-between;
@@ -1275,14 +1387,14 @@ tr {
   color: #fff; }
 
 .table-scroll {
-  width: 100%;
+  width: 90%;
   overflow: auto;
   margin-bottom: 55px; }
 
 .table-page1 .table_t1 {
   width: 1850px; }
 .table-page1 .table_t2 {
-  width: 93.7%;
+  width: 100%;
   border: 2px solid #E1E1E1;
   margin-bottom: 12px; }
 .table-page1 .table_t2 td {
@@ -1345,7 +1457,6 @@ tr {
   border-right: 0px solid white; }
 .table-page1 .td_create {
   margin: 0 auto;
-  margin-right: -55px;
   padding: 0 20px; }
 
 .table-page1 td {

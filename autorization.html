@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="chosen/chosen.css">
+    <link rel="stylesheet" href="css/resetCSS.css">
+    <link rel="stylesheet" href="css/default-style.css">    
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="images/logo.svg" alt="" class="header__logo">
+            <div class="header__burger">
+                <span></span>
+            </div>
+            <div class="header__content">
+                <div class="header__navigation">
+                    <ul class="header__list">
+                        <li>
+                            <a href="page-1.html" class="header__link">Главная</a>
+                        </li>
+                            <a class="header__link">Договора</a>
+                        </li>
+                        <li>
+                            <a href="page-2.html" class="header__link">Заказы</a>
+                        </li>
+                        <li>
+                            <a class="header__link">Заявки</a>
+                        </li>
+                        <li>
+                            <a class="header__link">КомПред</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="header__link bold">Справочники</a>
+                            <ul class="menu__item__submenu">
+                                <li class="menu__item__submenu__subitem">
+                                    <span class="menu__item__submenu__treugolnik"></span>
+                                    <span class="menu__item__submenu__treugolnik__border"></span>
+                                    <a href="#" class="header__link__sub">Категории контрагентов</a>
+                                </li>
+                                <li class="menu__item__submenu__subitem"><a href="#" class="header__link__sub">Е-mail</a></li>
+                                <li class="menu__item__submenu__subitem"><a href="#" class="header__link__sub">Города контрагентов</a></li>
+                                <li class="menu__item__submenu__subitem"><a href="#" class="header__link__sub">Колл-центры</a></li>
+                                <li class="menu__item__submenu__subitem"><a href="#" class="header__link__sub">Мастера</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="header__link">Опции</a>
+                        </li>
+                        <li>
+                            <a class="header__link">adm: выйти</a>
+                        </li>
+                    </ul>
+                    <div class="header__info">
+                        <p class="header__info_text">Ваша роль:<span class="header__info_bold">Администратор</span>;</p>
+                        <p class="header__info_text">Ваш логин:<span class="header__info_bold">adm</span>;</p>
+                        <p class="header__info_text">Версия:<span class="header__info_bold">Na</span>;</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main main__create__account">
+            <div class="autorization">
+                <div class="create__account">
+                    <form action="">
+                        <div class="create__content">
+                            <div class="title">
+                                Авторизация
+                            </div>
+                            <div class="email">
+                                <div class="subtitle">
+                                    Логин
+                                </div>
+                                <div class="email__content">
+                                    <div class="email__input">
+                                        <input type="login" name="login" id="login" placeholder="Введите ваш логин" required>
+                                        <span class="close" onclick="this.previousElementSibling.value = ''">
+                                            &times;
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="email">
+                                <div class="subtitle">
+                                    Пароль
+                                </div>
+                                <div class="email__content">
+                                    <div class="email__input">
+                                        <input type="password" name="password" id="password" placeholder="Введите ваш пароль" required>
+                                        <span class="close" onclick="this.previousElementSibling.value = ''">
+                                            &times;
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="its__me">
+                                <label class="save__me">
+                                    <input type="checkbox" name="itsme" id="itsme">
+                                    <span class="fake__checkbox"></span>
+                                    <div  class="about">Запомнить меня</div>
+                                </label>
+                            </div>
+                            <a id="forgot__pass">Напомнить логин и пароль?</a>
+                            <div class="result__btn">
+                                <input class="submit" type="submit" value="Войти">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="forgot__pass__modal">
+                <div class="create__account">
+                    <form action="">
+                        <div class="create__content">
+                            <div class="title">
+                                Напомнить логин и пароль
+                            </div>
+                            <div class="email">
+                                <div class="subtitle">
+                                    Введите ваш E-mail
+                                </div>
+                                <div class="email__content">
+                                    <div class="email__input">
+                                        <input type="email" name="email" id="email" required>
+                                        <span class="close" onclick="this.previousElementSibling.value = ''">
+                                            &times;
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="result__btn">
+                                <input class="submit" type="submit" value="Напомнить">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="succes">
+                <div class="create__account">
+                    <form action="">
+                        <div class="create__content">
+                            <div class="title">
+                                Отправлено
+                            </div>
+                            <svg width="109" height="105" viewBox="0 0 109 105" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_d)">
+                                <path d="M73.7036 19.9035C74.0609 19.9035 74.391 20.0941 74.5696 20.4035L93.8958 53.8774C94.0745 54.1868 94.0745 54.568 93.8958 54.8774L74.5696 88.3514C74.391 88.6608 74.0609 88.8514 73.7036 88.8514L35.0513 88.8514C34.694 88.8514 34.3639 88.6608 34.1852 88.3514L14.8591 54.8774C14.6804 54.568 14.6804 54.1868 14.8591 53.8774L34.1852 20.4035C34.3639 20.0941 34.694 19.9035 35.0513 19.9035L73.7036 19.9035Z" fill="#FFA000"/>
+                                <path d="M74.1366 20.6535L93.4628 54.1274C93.5521 54.2821 93.5521 54.4727 93.4628 54.6274L74.1366 88.1014C74.0473 88.2561 73.8823 88.3514 73.7036 88.3514L35.0513 88.3514C34.8726 88.3514 34.7076 88.2561 34.6183 88.1014L15.2921 54.6274C15.2028 54.4727 15.2028 54.2821 15.2921 54.1274L34.6183 20.6535C34.7076 20.4988 34.8726 20.4035 35.0513 20.4035L73.7036 20.4035C73.8823 20.4035 74.0473 20.4988 74.1366 20.6535Z" stroke="#E49106"/>
+                                </g>
+                                <path d="M47.0276 71.0006C47.6276 71.5006 48.3276 71.7006 49.0276 71.7006C49.8276 71.7006 50.6276 71.4006 51.2276 70.8006L72.2136 42.3C73.4136 41.1 73.4136 39.1 72.2136 37.9C71.0136 36.7 69.0136 36.7 67.8136 37.9L48.8276 64.4005L39.1139 53.4C37.8139 52.3 35.8139 52.5 34.7139 53.8C33.6139 55.1 33.8139 57.1 35.1139 58.2L47.0276 71.0006Z" fill="white"/>
+                                <defs>
+                                <filter id="filter0_d" x="3.69598" y="1.80054" width="103.363" height="107.154" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                                <feOffset dx="1" dy="1"/>
+                                <feGaussianBlur stdDeviation="1"/>
+                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                                </filter>
+                                </defs>
+                            </svg>
+                            <div class="about">закроется через <span class="value">2</span> сек.</div>
+                            <div class="result__btn">
+                                <input class="submit" type="submit" value="Хорошо">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="forgot" class="succes">
+                <div class="create__account">
+                    <form action="">
+                        <div class="create__content">
+                            <div class="title">
+                                не выполнено
+                            </div>
+                            <svg width="109" height="109" viewBox="0 0 109 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_d)">
+                                <path d="M73.7036 19.9035C74.0609 19.9035 74.391 20.0941 74.5696 20.4035L93.8958 53.8774C94.0745 54.1868 94.0745 54.568 93.8958 54.8774L74.5696 88.3514C74.391 88.6608 74.0609 88.8514 73.7036 88.8514L35.0513 88.8514C34.694 88.8514 34.3639 88.6608 34.1852 88.3514L14.8591 54.8774C14.6804 54.568 14.6804 54.1868 14.8591 53.8774L34.1852 20.4035C34.3639 20.0941 34.694 19.9035 35.0513 19.9035L73.7036 19.9035Z" fill="white"/>
+                                <path d="M74.1366 20.6535L93.4628 54.1274C93.5521 54.2821 93.5521 54.4727 93.4628 54.6274L74.1366 88.1014C74.0473 88.2561 73.8823 88.3514 73.7036 88.3514L35.0513 88.3514C34.8726 88.3514 34.7076 88.2561 34.6183 88.1014L15.2921 54.6274C15.2028 54.4727 15.2028 54.2821 15.2921 54.1274L34.6183 20.6535C34.7076 20.4988 34.8726 20.4035 35.0513 20.4035L73.7036 20.4035C73.8823 20.4035 74.0473 20.4988 74.1366 20.6535Z" stroke="#CB300E"/>
+                                </g>
+                                <path d="M68.9999 41L41.9999 68M41.9999 41L68.9999 68" stroke="#F03C14" stroke-width="6"/>
+                                <defs>
+                                <filter id="filter0_d" x="3.69598" y="1.80054" width="103.363" height="107.154" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                                <feOffset dx="1" dy="1"/>
+                                <feGaussianBlur stdDeviation="1"/>
+                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                                </filter>
+                                </defs>
+                            </svg>
+                            <div class="about">закроется через <span class="value">2</span> сек.</div>
+                            <div class="result__btn">
+                                <input class="submit" type="submit" value="Жаль">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="chosen/chosen.jquery.js"></script>
+    <script src="js/script.js"></script>
+
+
+    <script>
+        $(document).ready(function(){
+            $(".pop-up2__select").chosen();
+            $(".chosen-select").chosen({width: "254px"}); 
+            $(".select-locale").chosen({width: "170px"});
+            $(".select-date").chosen({width: "100%"})
+        });
+    </script>
+</body>
+</html>

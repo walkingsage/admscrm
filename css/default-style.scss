@@ -336,6 +336,175 @@ body{
     }
 }
 
+.autorization{
+    width: 300px;
+
+    .create__account{
+        width: 100%;
+        height: auto;
+        margin-top: 0 !important;
+    }
+
+    .its__me{
+        margin-bottom: 20px;
+
+        .save__me{
+            display: flex;
+            position: relative;
+            align-items: center;
+            cursor: pointer;
+
+            #itsme{
+                position: absolute;
+                width: 0;
+                height: 0;
+                opacity: 0;
+            }
+
+            .fake__checkbox{
+                width: 14px;
+                height: 14px;
+                border: 2px solid #FFA000;
+                box-sizing: border-box;
+                border-radius: 2px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+
+            #itsme:checked{
+                ~ .fake__checkbox:before{
+                    display: block;
+                }
+            }
+
+            .fake__checkbox:before{
+                display: none;
+                content: "";
+                position: absolute;
+                width: 8px;
+                height: 8px;
+                background: #FFA000;
+                border-radius: 2px;
+                transition-duration: .5s;
+            }
+
+            .about{
+                margin-left: 10px;font-weight: 600;
+                font-size: 14px;
+                line-height: 19px;
+                color: #000000;
+                @include sans;
+            }
+        }
+    }
+
+    #forgot__pass{
+        @include sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        color: #053A7F;
+        cursor: pointer;
+        text-decoration: underline;
+        text-decoration-color: #053A7F;
+        -moz-text-decoration-color: #053A7F;
+        text-align: center;
+    }
+
+    .result__btn{
+
+        input{
+            width: 100% !important;
+        }
+    }
+
+    .email__input{
+        width: 100% !important;
+
+        input{
+            width: 100%;
+        }
+
+    }
+}
+
+#forgot{
+
+    .create__account{
+        background-color: #F03C14;
+    }
+
+    .about{
+        color: #ffffff;
+    }
+}
+
+.succes{
+    width: 227px;
+
+    .create__account{
+        width: 100%;
+        height: auto;
+        margin-top: 0 !important;
+    }
+
+    .title{
+        margin-bottom: 0 !important;
+    }
+
+    svg{
+        align-self: center;
+    }
+
+    .about{
+        margin-top: 10px;
+        font-size: 12px;
+        line-height: 16px;
+        color: #C4C4C4;
+        @include sans;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .result__btn{
+        margin-top: 0 !important;
+
+        input{
+            width: 100% !important;
+        }
+    }
+
+}
+
+.forgot__pass__modal{
+    width: 340px;
+
+    .create__account{
+        width: 100%;
+        height: auto;
+        margin-top: 0 !important;
+    }
+
+    .result__btn{
+        margin-top: 0 !important;
+
+        input{
+            width: 100% !important;
+        }
+    }
+
+    .email__input{
+        width: 100% !important;
+
+        input{
+            width: 100%;
+        }
+    }
+}
+
 .overlay1{
 
 
@@ -422,6 +591,10 @@ body{
 
 .calendar__img{
     margin: 0 20px;
+}
+
+#fw{
+    width: 100%;
 }
 
 .calendar__img:hover path{
@@ -1154,6 +1327,11 @@ margin-bottom: 7px;
     .header{
         padding: 19px 0;
     }
+
+    .menu__item__submenu{
+        left: 0;
+    }
+
     .header__burger{
         display: block;
         position: fixed;
@@ -1217,7 +1395,6 @@ margin-bottom: 7px;
             margin-top: 25px;
         }
         &__list{
-            height: 300px;
             margin: 0;
             flex-direction: column;
             justify-content: space-between;
@@ -1634,16 +1811,18 @@ tr{
     }
 }
 .table-scroll{
-    width: 100%;
+    width: 90%;
     overflow: auto;  
     margin-bottom: 55px;  
 }
+
+
 .table-page1 .table{
     &_t1{
         width: 1850px;
     }
     &_t2{
-        width: 93.7%;
+        width: 100%;
         border: 2px solid #E1E1E1;
         margin-bottom: 12px;
     }
@@ -1729,7 +1908,6 @@ tr{
     }
     &_create{
         margin: 0 auto;
-        margin-right: -55px;
         padding: 0 20px;
     }
 }
