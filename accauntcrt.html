@@ -62,7 +62,7 @@
                 </div>
             </div>
         </header>
-        <main class="main">
+        <main class="main main__create__account">
             <div class="create__account">
                 <div class="octagon">
                     <svg class="hex" id="hex" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -92,14 +92,14 @@
                         </div>
                         <div class="id">
                             <div class="subtitle">
-                                id
+                                ID
                                 <div class="info">
                                     i
                                 </div>
                             </div>
                             <div class="id__value">
                                 <div class="dec">-</div>
-                                <input name="id" id="id__val" type="number" step="1" value="0">
+                                <input name="id" id="id__val" type="text" step="1" value="0">
                                 <div class="inc">+</div>
                             </div>
                         </div>
@@ -109,22 +109,27 @@
                             </div>
                             <div class="position__content">
                                 <div class="position__input">
-                                    <select name="role" id="role">
-                                        <option value="deafult">Выберите роль</option>
+                                    <select name="role" id="role" data-placeholder="Выберите роль" class="select-locale">
                                         <option value="admin">Администратор</option>
                                         <option value="manager">Менеджер</option>
                                         <option value="user">Пользователь</option>
                                     </select>
-                                    <span class="close" onclick="this.previousElementSibling.value = ''">
+                                    <span id="clearrole" class="close" onclick="this.previousElementSibling.value = ''">
                                         &times;
                                     </span>
-                                    <label for="role"></label>
                                 </div>
-                                <label class="switch">
-                                    <input name="active" id="active" type="checkbox">
-                                    <span class="slider round"></span>
+                                <div class="tumbler">
+                                    <label class="switch">
+                                        <input name="active" id="active" type="checkbox">
+                                        <svg class="polygon" width="35" height="15" viewBox="0 0 35 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.628589 7.5L5.96192 0.5H29.0381L34.3714 7.5L29.0381 14.5H5.96192L0.628589 7.5Z" fill="white" stroke="#FFA000"/>
+                                        </svg>                                            
+                                        <svg class="round" width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M18.4306 0H6.26126L0.845947 9.98847L6.26126 19.9885H18.4306L23.8459 9.98847L18.4306 0Z" fill="#FFA610"/>
+                                        </svg>
+                                    </label>
                                     <div class="about">Аккаунт активен</div>
-                                </label>
+                                </div>
                             </div>
                         </div>
                         <div class="projects">
@@ -136,7 +141,7 @@
                             </div>
                             <div class="projects__content">
                                 <div class="projects__input">
-                                    <input name="projects" id="projects" type="text">
+                                    <input name="projects" class="fake__input__value" id="projects" type="text">
                                     <div class="fake__input">
                                         <div class="top">
                                             <div class="result">
@@ -147,20 +152,31 @@
                                             </div>
                                         </div>
                                         <div class="fake__list">
-                                            <div class="windows about">Окна</div>
-                                            <div class="ADMS about">ADMS</div>
-                                            <div class="URW about">ЮРВ</div>
-                                            <div class="abscent about">Абсент +</div>
-                                            <div class="tomsk about">Томск 2020</div>
+                                            <div class="line another__line">
+                                                <div class="windows about fake__item">Окна</div>
+                                                <div class="ADMS about fake__item">ADMS</div>
+                                            </div>
+                                            <div class="line">
+                                                <div class="URW about fake__item">ЮРВ</div>
+                                                <div class="abscent about fake__item">Абсент +</div>
+                                                <div class="tomsk about fake__item">Томск 2020</div>
+                                            </div>
                                         </div>
                                     </div>
                                     <label for="projects"></label>
                                 </div>
-                                <label class="switch">
-                                    <input name="active" id="active" type="checkbox">
-                                    <span class="slider round"></span>
+                                <div class="tumbler">
+                                    <label class="switch">
+                                        <input name="allprogects" id="allprogects" type="checkbox">
+                                        <svg class="polygon" width="35" height="15" viewBox="0 0 35 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.628589 7.5L5.96192 0.5H29.0381L34.3714 7.5L29.0381 14.5H5.96192L0.628589 7.5Z" fill="white" stroke="#FFA000"/>
+                                        </svg>                                            
+                                        <svg class="round" width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M18.4306 0H6.26126L0.845947 9.98847L6.26126 19.9885H18.4306L23.8459 9.98847L18.4306 0Z" fill="#FFA610"/>
+                                        </svg>
+                                    </label>
                                     <div class="about">Присоединять ко всем проектам</div>
-                                </label>
+                                </div>
                             </div>
                         </div>
                         <div class="email">
@@ -173,16 +189,24 @@
                             <div class="email__content">
                                 <div class="email__input">
                                     <input type="email" name="email" id="email" placeholder="Главный координатор">
-                                    <label for="email"></label>
                                     <span class="close" onclick="this.previousElementSibling.value = ''">
                                         &times;
                                     </span>
+                                    <label for="email"></label>
+                                    
                                 </div>
-                                <label class="switch">
-                                    <input name="active" id="active" type="checkbox">
-                                    <span class="slider round"></span>
+                                <div class="tumbler">
+                                    <label class="switch">
+                                        <input name="email__confirm" id="email__confirm" type="checkbox">
+                                        <svg class="polygon" width="35" height="15" viewBox="0 0 35 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.628589 7.5L5.96192 0.5H29.0381L34.3714 7.5L29.0381 14.5H5.96192L0.628589 7.5Z" fill="white" stroke="#FFA000"/>
+                                        </svg>                                            
+                                        <svg class="round" width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M18.4306 0H6.26126L0.845947 9.98847L6.26126 19.9885H18.4306L23.8459 9.98847L18.4306 0Z" fill="#FFA610"/>
+                                        </svg>
+                                    </label>
                                     <div class="about">E-mail подтверждён</div>
-                                </label>
+                                </div>
                             </div>
                         </div>
                         <div class="line">
@@ -193,12 +217,15 @@
                                         ?
                                     </div>
                                 </div>
-                                <div class="email__input">
-                                    <input type="text" name="login" id="login" placeholder="Rooter">
-                                    <label for="login"></label>
-                                    <span class="close" onclick="this.previousElementSibling.value = ''">
-                                        &times;
-                                    </span>
+                                <div class="email__content">
+                                    <div class="email__input">
+                                        <input type="text" name="login" id="login" placeholder="Rooter">
+                                        <span class="close" onclick="this.previousElementSibling.value = ''">
+                                            &times;
+                                        </span>
+                                        <label for="login"></label>
+                                        
+                                    </div>
                                 </div>
                             </div>
                             <div class="email">
@@ -208,27 +235,33 @@
                                         ?
                                     </div>
                                 </div>
-                                <div class="email__input">
-                                    <input type="text" name="name" id="name" placeholder="Гл. координатор">
-                                    <label for="name"></label>
-                                    <span class="close" onclick="this.previousElementSibling.value = ''">
-                                        &times;
-                                    </span>
+                                <div class="email__content">
+                                    <div class="email__input">
+                                        <input type="text" name="name" id="name" placeholder="Гл. координатор">
+                                        <span class="close" onclick="this.previousElementSibling.value = ''">
+                                            &times;
+                                        </span>
+                                        <label for="name"></label>
+                                        
+                                    </div>
                                 </div>
                             </div>
                             <div class="email">
                                 <div class="subtitle">
-                                    Пароль <span class="red">*</span>
+                                    Пароль
                                     <div class="info">
                                         ?
                                     </div>
                                 </div>
-                                <div class="email__input">
-                                    <input type="password" name="password" id="password" >
-                                    <label for="login"></label>
-                                    <span class="close" onclick="this.previousElementSibling.value = ''">
-                                        &times;
-                                    </span>
+                                <div class="email__content">
+                                    <div class="email__input">
+                                        <input type="password" name="password" id="password" >
+                                        <span class="close" onclick="this.previousElementSibling.value = ''">
+                                            &times;
+                                        </span>
+                                        <label for="login"></label>
+                                        
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -240,15 +273,10 @@
                                         ?
                                     </div>
                                 </div>
-                                <label class="switch">
-                                    <input name="allcity" id="allcity" type="checkbox">
-                                    <span class="slider round"></span>
-                                    <div class="about">Присоединять ко всем городам</div>
-                                </label>
                             </div>
                             <div class="projects__content">
                                 <div class="projects__input">
-                                    <input name="city" id="city" type="text">
+                                    <input class="fake__input__value" name="city" id="city" type="text">
                                     <div class="fake__input">
                                         <div class="top">
                                             <div class="result">
@@ -259,13 +287,25 @@
                                             </div>
                                         </div>
                                         <div class="fake__list">
-                                            <div class="krasnoyarsk about">Красноярск</div>
-                                            <div class="stavropol about">Ставрополь</div>
-                                            <div class="tomskcity about">Томск</div>
-                                            <div class="rostov about">Ростов-на-Дону</div>
+                                            <div class="krasnoyarsk about fake__item">Красноярск</div>
+                                            <div class="stavropol about fake__item">Ставрополь</div>
+                                            <div class="tomskcity about fake__item">Томск</div>
+                                            <div class="rostov about fake__item">Ростов-на-Дону</div>
                                         </div>
                                     </div>
                                     <label for="projects"></label>
+                                </div>
+                                <div class="tumbler">
+                                    <label class="switch">
+                                        <input name="alltowns" id="alltowns" type="checkbox">
+                                        <svg class="polygon" width="35" height="15" viewBox="0 0 35 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.628589 7.5L5.96192 0.5H29.0381L34.3714 7.5L29.0381 14.5H5.96192L0.628589 7.5Z" fill="white" stroke="#FFA000"/>
+                                        </svg>                                            
+                                        <svg class="round" width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M18.4306 0H6.26126L0.845947 9.98847L6.26126 19.9885H18.4306L23.8459 9.98847L18.4306 0Z" fill="#FFA610"/>
+                                        </svg>
+                                    </label>
+                                    <div class="about">Присоединять ко всем городам</div>
                                 </div>
                             </div>
                         </div>
@@ -279,7 +319,7 @@
                                 </div>
                                 <div class="projects__content">
                                     <div class="projects__input">
-                                        <input name="callcenter" id="callcenter" type="text">
+                                        <input class="fake__input__value" name="callcenter" id="callcenter" type="text">
                                         <div class="fake__input">
                                             <div class="top">
                                                 <div class="result">
@@ -290,8 +330,8 @@
                                                 </div>
                                             </div>
                                             <div class="fake__list">
-                                                <div class="first about">Первый</div>
-                                                <div class="tomskcall about">Томск</div>
+                                                <div class="first about fake__item">Первый</div>
+                                                <div class="tomskcall about fake__item">Томск</div>
                                             </div>
                                         </div>
                                         <label for="callcenter"></label>
@@ -307,7 +347,7 @@
                                 </div>
                                 <div class="projects__content">
                                     <div class="projects__input">
-                                        <input name="calldeafult" id="calldeafult" type="text">
+                                        <input class="fake__input__value" name="calldeafult" id="calldeafult" type="text">
                                         <div class="fake__input">
                                             <div class="top">
                                                 <div class="result">
@@ -318,8 +358,8 @@
                                                 </div>
                                             </div>
                                             <div class="fake__list">
-                                                <div class="first about">Первый</div>
-                                                <div class="tomskcall about">Томск</div>
+                                                <div class="first about fake__item">Первый</div>
+                                                <div class="tomskcall about fake__item">Томск</div>
                                             </div>
                                         </div>
                                         <label for="calldeafult"></label>
@@ -334,16 +374,15 @@
                                 </div>
                                 <div class="position__content">
                                     <div class="position__input">
-                                        <select name="sostoyanie" id="sostoyanie">
+                                        <select name="sostoyanie" id="sostoyanie" data-placeholder="Выберите роль" class="select-locale">
                                             <option value="deafult">Одиночный выбор</option>
                                             <option value="admin">Администратор</option>
                                             <option value="manager">Менеджер</option>
                                             <option value="user">Пользователь</option>
                                         </select>
-                                        <label for="role"></label>
-                                        <div class="btn__more">
-                                            <span class="treugolnik"></span>
-                                        </div>
+                                        <span id="clearrole" class="close" onclick="this.previousElementSibling.value = ''">
+                                            &times;
+                                        </span>
                                     </div>
                                 </div>
                             </div>
@@ -353,15 +392,14 @@
                                 </div>
                                 <div class="position__content">
                                     <div class="position__input">
-                                        <select name="time" id="time">
+                                        <select name="time" id="time" data-placeholder="Выберите роль" class="select-locale">
                                             <option value="deafult">Выберите из списка</option>
                                             <option value="krasnoyarsk">Asia/Krasnoyarsk</option>
                                             <option value="moscow">Moscow/Russia</option>
                                         </select>
-                                        <label for="role"></label>
-                                        <div class="btn__more">
-                                            <span class="treugolnik"></span>
-                                        </div>
+                                        <span id="clearrole" class="close" onclick="this.previousElementSibling.value = ''">
+                                            &times;
+                                        </span>
                                     </div>
                                 </div>
                             </div>
@@ -374,11 +412,13 @@
                                         ?
                                     </div>
                                 </div>
-                                <div class="email__input">
-                                    <input type="text" name="phone" id="phone" placeholder="937 009 01 19">
-                                    <span class="close" onclick="this.previousElementSibling.value = ''">
-                                        &times;
-                                    </span>
+                                <div class="email__content">
+                                    <div class="email__input">
+                                        <input type="text" name="phone" id="phone" placeholder="937 009 01 19">
+                                        <span class="close" onclick="this.previousElementSibling.value = ''">
+                                            &times;
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                             <div class="email">
@@ -388,11 +428,13 @@
                                         ?
                                     </div>
                                 </div>
-                                <div class="email__input">
-                                    <input type="text" name="telegram" id="telegram">
-                                    <span class="close" onclick="this.previousElementSibling.value = ''">
-                                        &times;
-                                    </span>
+                                <div class="email__content">
+                                    <div class="email__input">
+                                        <input type="text" name="telegram" id="telegram">
+                                        <span class="close" onclick="this.previousElementSibling.value = ''">
+                                            &times;
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                             <div class="email">
@@ -402,13 +444,36 @@
                                         ?
                                     </div>
                                 </div>
-                                <div class="email__input">
-                                    <input type="text" name="telegramid" id="telegramid">
-                                    <span class="close" onclick="this.previousElementSibling.value = ''">
-                                        &times;
-                                    </span>
+                                <div class="email__content">
+                                    <div class="email__input">
+                                        <input type="text" name="telegramid" id="telegramid">
+                                        <span class="close" onclick="this.previousElementSibling.value = ''">
+                                            &times;
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="message__events">
+                            <div class="line__figur"></div>
+                            <div class="subtitle">
+                                Уведомлять в мессенджеры
+                            </div>
+                            <div class="tumbler">
+                                <label class="switch">
+                                    <input name="accept__mess" id="accept__mess" type="checkbox">
+                                    <svg class="polygon" width="35" height="15" viewBox="0 0 35 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.628589 7.5L5.96192 0.5H29.0381L34.3714 7.5L29.0381 14.5H5.96192L0.628589 7.5Z" fill="white" stroke="#FFA000"/>
+                                    </svg>                                            
+                                    <svg class="round" width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18.4306 0H6.26126L0.845947 9.98847L6.26126 19.9885H18.4306L23.8459 9.98847L18.4306 0Z" fill="#FFA610"/>
+                                    </svg>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="result__btn">
+                            <button class="close">Отменить</button>
+                            <input class="submit" type="submit" value="Сохранить">
                         </div>
                     </div>
                 </form>
@@ -417,6 +482,8 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/createuser.js"></script>
     <script src="chosen/chosen.jquery.js"></script>
     <script src="js/script.js"></script>
     <script src="js/fileloader.js"></script>
