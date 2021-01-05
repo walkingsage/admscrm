@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="chosen/chosen.css">
     <link rel="stylesheet" href="css/resetCSS.css">
     <link rel="stylesheet" href="css/default-style.css">
+    <link rel="stylesheet" href="css/deafult.css">
 </head>
 <body>
     <div class="container">
@@ -23,7 +24,23 @@
                         <li>
                             <a href="page-1.html" class="header__link">Главная</a>
                         </li>
-                            <a class="header__link">Договора</a>
+                        <li>
+                            <a href="page-2.html" class="header__link">Заказы</a>
+                        </li>
+                        <li>
+                            <a class="header__link">Заявки</a>
+                        </li>
+                        <li>
+                            <a class="header__link">КомПред</a>
+                        </li>
+                        <li>
+                            <a href="page-2.html" class="header__link">Заказы</a>
+                        </li>
+                        <li>
+                            <a class="header__link">Заявки</a>
+                        </li>
+                        <li>
+                            <a class="header__link">КомПред</a>
                         </li>
                         <li>
                             <a href="page-2.html" class="header__link">Заказы</a>
@@ -135,7 +152,7 @@
             <section class="content">
                 <div  class="table table-page1">
                     <p class="table__title">Заявки по городу Ростов-на-Дону</p>
-                    <div id="fw" class="table-scroll">
+                    <div  class="table-scroll">
                         <table class = "table-page1 table table_t1">
                             <tr class='tr tr_title tr_orange'>
                                 <th>Менеджер</th>
@@ -191,7 +208,7 @@
                                 <td class="td td_bold">не назначена</td>
                                 <td class="td td_bold">32156</td>
                             </tr>
-                            <tr class='tr tr_yellow td_small-padding'>
+                            <tr style="background-color: #F9F2B5;" class='tr td_small-padding'>
                                 <td>
                                     <div class="octagon">
                                         <svg class="hex" id="hex3" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -232,7 +249,7 @@
                                 <td class="td td_bold">назначена</td>
                                 <td class="td td_bold">32157</td>
                             </tr>
-                            <tr class='tr tr_blue'>
+                            <tr style="background-color: #B3E4F3;" class='tr'>
                                 <td class="td td_bold">Игорь Кучеренко</td>
                                 <td>15:05</td>
                                 <td>Тамара Николаевна</td>
@@ -251,7 +268,7 @@
                                 <td class="td td_bold">менеджер у клиента</td>
                                 <td class="td td_bold">32157</td>
                             </tr>
-                            <tr class='tr tr_green'>
+                            <tr style="background-color: #C8F3B3;" class='tr'>
                                 <td class="td td_bold">Иван Халдеев</td>
                                 <td>15:05</td>
                                 <td>Тамара Николаевна</td>
@@ -773,15 +790,21 @@
                         <div>
                             <div class="table__top">
                                 <p class="table__title table__title_nomargin">Сводная статистика по Ростов-на-Дону</p>
-                                <div class="table__select table__select_1">
-                                    <select data-placeholder="день" class="select-date">
+                                <form method="POST" id="frmstat" class="table__select table__select_1 ts">
+                                    <select id="stat"  data-placeholder="день" class="select-date">
                                         <option>день</option>
                                         <option>с начала недели</option>
                                         <option>с начала месяца</option>
                                         <option>за прошлый месяц</option>
-                                        <option>за конкретный день</option>
+                                        <option value="day">за конкретный день</option>
                                     </select>
-                                </div>
+                                </form>
+                                <form method="GET" id="date2" class="x-field date__first">
+                                    <input type="text" id="datepicker2">
+                                    <span class="close" onclick="this.previousElementSibling.value = ''">
+                                        &times;
+                                    </span>
+                                </form>
                                 <p class="table__group">группировать</p>
                                 <label class="label">
                                     <input class="checkbox checkbox_orange" type="checkbox">
@@ -836,15 +859,21 @@
                         <div>
                             <div class="table__top">
                                 <p class="table__title table__title_nomargin">Сводная статистика по Ростов-на-Дону</p>
-                                <div class="table__select_1">
-                                    <select data-placeholder="день" class="select-date">
+                                <form method="POST" id="frmstat1" class="table__select_2 table__select_1 ts1">
+                                    <select id="stat1" data-placeholder="день" class="select-date">
                                         <option>день</option>
                                         <option>с начала недели</option>
                                         <option>с начала месяца</option>
                                         <option>за прошлый месяц</option>
-                                        <option>за конкретный день</option>
+                                        <option value="day">за конкретный день</option>
                                     </select>
-                                </div>
+                                </form>
+                                <form method="POST" id="date3" class="x-field date__first">
+                                    <input type="text" id="datepicker3">
+                                    <span class="close" onclick="this.previousElementSibling.value = ''">
+                                        &times;
+                                    </span>
+                                </form>
                                 <p class="table__group">группировать</p>
                                 <label class="label">
                                     <input class="checkbox checkbox_orange" type="checkbox">
@@ -1389,6 +1418,11 @@
     </script>
     <script src="js/jquery-ui-timepicker-addon.min.js"></script>
     <script>
+        document.querySelector(".calendar__img").onclick = function(e){
+            document.getElementById("datepicker1").focus();
+        }
+    </script>
+    <script>
         $(function(){
             $("#datepicker1").datepicker();
             $("#datepicker2").datepicker();
@@ -1414,5 +1448,6 @@
             document.getElementById("datepicker1").focus();
         }
     </script>
+    <script src="js/main.js"></script>
 </div>
 </html>

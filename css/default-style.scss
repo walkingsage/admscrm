@@ -282,59 +282,7 @@ body{
     cursor: pointer;
 }
 
-.hex{
-    transition-duration: .5s;
-}
 
-.octagon{
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-}
-
-.plus{
-    position: absolute;
-    margin-bottom: 2px;
-    margin-right: 2px;
-    transition-duration: .5s;
-}
-
-.octagon:hover .plus path, .title__button:hover .plus path, .modal3__open:hover .plus path,.td_create:hover .plus path, .modal2__open:hover .plus path{
-    fill: #ffa000;
-}
-
-.title__button:hover .hex path, .octagon:hover .hex path, .modal3__open:hover .hex path,.td_create:hover .hex path, .modal2__open:hover .hex path{
-    fill: #ffffff;
-    stroke: #ffa000;
-    transition-duration: .5s;
-}
-
-.adress{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.adress .location{
-    right: 20px;
-    width: 14px;
-    height: 20px;
-    position: absolute;
-}
-
-.adress .location:hover path{
-    fill: #ffa000;
-}
-
-.modal__body{
-
-    .container{
-        position: relative;
-        display: grid;
-    }
-}
 
 .autorization{
     width: 300px;

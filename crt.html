@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="chosen/chosen.css">
+    <link rel="stylesheet" href="css/resetCSS.css">
+    <link rel="stylesheet" href="css/default-style.css"> 
+    <link rel="stylesheet" href="css/deafult.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="images/logo.svg" alt="" class="header__logo">
+            <div class="header__burger">
+                <span></span>
+            </div>
+            <div class="header__content">
+                <div class="header__navigation">
+                    <ul class="header__list">
+                        <li>
+                            <a href="page-1.html" class="header__link">Главная</a>
+                        </li>
+                            <a class="header__link">Договора</a>
+                        </li>
+                        <li>
+                            <a href="page-2.html" class="header__link">Заказы</a>
+                        </li>
+                        <li>
+                            <a class="header__link">Заявки</a>
+                        </li>
+                        <li>
+                            <a class="header__link">КомПред</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="header__link bold">Справочники</a>
+                            <ul class="menu__item__submenu">
+                                <li class="menu__item__submenu__subitem">
+                                    <span class="menu__item__submenu__treugolnik"></span>
+                                    <span class="menu__item__submenu__treugolnik__border"></span>
+                                    <a href="#" class="header__link__sub">Категории контрагентов</a>
+                                </li>
+                                <li class="menu__item__submenu__subitem"><a href="#" class="header__link__sub">Е-mail</a></li>
+                                <li class="menu__item__submenu__subitem"><a href="#" class="header__link__sub">Города контрагентов</a></li>
+                                <li class="menu__item__submenu__subitem"><a href="#" class="header__link__sub">Колл-центры</a></li>
+                                <li class="menu__item__submenu__subitem"><a href="#" class="header__link__sub">Мастера</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="header__link">Опции</a>
+                        </li>
+                        <li>
+                            <a class="header__link">adm: выйти</a>
+                        </li>
+                    </ul>
+                    <div class="header__info">
+                        <p class="header__info_text">Ваша роль:<span class="header__info_bold">Администратор</span>;</p>
+                        <p class="header__info_text">Ваш логин:<span class="header__info_bold">adm</span>;</p>
+                        <p class="header__info_text">Версия:<span class="header__info_bold">Na</span>;</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main main__create__account">
+                <form id="forma" action="">
+                    
+                    <div class="title">
+                        создать пользователя
+                    </div>
+                    <div class="create__content col-lg-2">
+                        <div class="id">
+                            <div class="subtitle">
+                                ID
+                                <div class="info">
+                                    i
+                                </div>
+                            </div>
+                            <div class="id__value">
+                                <div class="dec">-</div>
+                                <input name="id" id="id__val" type="text" step="1" value="0">
+                                <div class="inc">+</div>
+                            </div>
+                        </div>
+                        <div class="position col-lg-4">
+                            <div class="subtitle">
+                                Роль пользователя в админке
+                            </div>
+                            <div class="position__content">
+                                <div class="position__input">
+                                    <select name="role" id="role" data-placeholder="Выберите роль" class="select-locale">
+                                        <option value="admin">Администратор</option>
+                                        <option value="manager">Менеджер</option>
+                                        <option value="user">Пользователь</option>
+                                    </select>
+                                    <span id="clearrole" class="close" onclick="this.previousElementSibling.value = ''">
+                                        &times;
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tumbler col-lg-3">
+                            <label class="switch">
+                                <input name="active" id="active" type="checkbox">
+                                <svg class="polygon" width="35" height="15" viewBox="0 0 35 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.628589 7.5L5.96192 0.5H29.0381L34.3714 7.5L29.0381 14.5H5.96192L0.628589 7.5Z" fill="white" stroke="#FFA000"/>
+                                </svg>                                            
+                                <svg class="round" width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.4306 0H6.26126L0.845947 9.98847L6.26126 19.9885H18.4306L23.8459 9.98847L18.4306 0Z" fill="#FFA610"/>
+                                </svg>
+                            </label>
+                            <div class="about">Аккаунт активен</div>
+                        </div>
+                        <div class="tumbler col-lg-3">
+                            <label class="switch">
+                                <input name="allprogects" id="allprogects" type="checkbox">
+                                <svg class="polygon" width="35" height="15" viewBox="0 0 35 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.628589 7.5L5.96192 0.5H29.0381L34.3714 7.5L29.0381 14.5H5.96192L0.628589 7.5Z" fill="white" stroke="#FFA000"/>
+                                </svg>                                            
+                                <svg class="round" width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.4306 0H6.26126L0.845947 9.98847L6.26126 19.9885H18.4306L23.8459 9.98847L18.4306 0Z" fill="#FFA610"/>
+                                </svg>
+                            </label>
+                            <div class="about">Присоединять ко всем проектам</div>
+                        </div>
+                        <div class="tumbler col-lg-3">
+                            <label class="switch">
+                                <input name="email__confirm" id="email__confirm" type="checkbox">
+                                <svg class="polygon" width="35" height="15" viewBox="0 0 35 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.628589 7.5L5.96192 0.5H29.0381L34.3714 7.5L29.0381 14.5H5.96192L0.628589 7.5Z" fill="white" stroke="#FFA000"/>
+                                </svg>                                            
+                                <svg class="round" width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.4306 0H6.26126L0.845947 9.98847L6.26126 19.9885H18.4306L23.8459 9.98847L18.4306 0Z" fill="#FFA610"/>
+                                </svg>
+                            </label>
+                            <div class="about">E-mail подтверждён</div>
+                        </div>
+                        <div class="tumbler col-lg-3">
+                            <label class="switch">
+                                <input name="alltowns" id="alltowns" type="checkbox">
+                                <svg class="polygon" width="35" height="15" viewBox="0 0 35 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.628589 7.5L5.96192 0.5H29.0381L34.3714 7.5L29.0381 14.5H5.96192L0.628589 7.5Z" fill="white" stroke="#FFA000"/>
+                                </svg>                                            
+                                <svg class="round" width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.4306 0H6.26126L0.845947 9.98847L6.26126 19.9885H18.4306L23.8459 9.98847L18.4306 0Z" fill="#FFA610"/>
+                                </svg>
+                            </label>
+                            <div class="about">Присоединять ко всем городам</div>
+                        </div>
+                        <div class="tumbler col-lg-3">
+                            <label class="switch">
+                                <input name="email__confirm" id="email__confirm" type="checkbox">
+                                <svg class="polygon" width="35" height="15" viewBox="0 0 35 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.628589 7.5L5.96192 0.5H29.0381L34.3714 7.5L29.0381 14.5H5.96192L0.628589 7.5Z" fill="white" stroke="#FFA000"/>
+                                </svg>                                            
+                                <svg class="round" width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.4306 0H6.26126L0.845947 9.98847L6.26126 19.9885H18.4306L23.8459 9.98847L18.4306 0Z" fill="#FFA610"/>
+                                </svg>
+                            </label>
+                            <div class="about">E-mail подтверждён</div>
+                        </div>
+                        <div class="projects">
+                            <div class="subtitle">
+                                Проекты
+                                <div class="info">
+                                    ?
+                                </div>
+                            </div>
+                            <div class="projects__content">
+                                <div class="projects__input">
+                                    <input name="projects" class="fake__input__value" id="projects" type="text">
+                                    <div class="fake__input">
+                                        <div class="top">
+                                            <div class="result">
+                                            
+                                            </div>
+                                            <div class="btn__more">
+                                                <span class="treugolnik"></span>
+                                            </div>
+                                        </div>
+                                        <div class="fake__list">
+                                            <div class="line another__line">
+                                                <div class="windows about fake__item">Окна</div>
+                                                <div class="ADMS about fake__item">ADMS</div>
+                                            </div>
+                                            <div class="line">
+                                                <div class="URW about fake__item">ЮРВ</div>
+                                                <div class="abscent about fake__item">Абсент +</div>
+                                                <div class="tomsk about fake__item">Томск 2020</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <label for="projects"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="email">
+                            <div class="subtitle">
+                                E-mail
+                                <div class="info">
+                                    ?
+                                </div>
+                            </div>
+                            <div class="email__content">
+                                <div class="email__input">
+                                    <input type="email" name="email" id="email" placeholder="Главный координатор">
+                                    <span class="close" onclick="this.previousElementSibling.value = ''">
+                                        &times;
+                                    </span>
+                                    <label for="email"></label>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="email">
+                            <div class="subtitle">
+                                Логин <span class="red">*</span>
+                                <div class="info">
+                                    ?
+                                </div>
+                            </div>
+                            <div class="email__content">
+                                <div class="email__input">
+                                    <input type="text" name="login" id="login" placeholder="Rooter">
+                                    <span class="close" onclick="this.previousElementSibling.value = ''">
+                                        &times;
+                                    </span>
+                                    <label for="login"></label>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="email">
+                            <div class="subtitle">
+                                Имя <span class="red">*</span>
+                                <div class="info">
+                                    ?
+                                </div>
+                            </div>
+                            <div class="email__content">
+                                <div class="email__input">
+                                    <input type="text" name="name" id="name" placeholder="Гл. координатор">
+                                    <span class="close" onclick="this.previousElementSibling.value = ''">
+                                        &times;
+                                    </span>
+                                    <label for="name"></label>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="email">
+                            <div class="subtitle">
+                                Пароль
+                                <div class="info">
+                                    ?
+                                </div>
+                            </div>
+                            <div class="email__content">
+                                <div class="email__input">
+                                    <input type="password" name="password" id="password" >
+                                    <span class="close" onclick="this.previousElementSibling.value = ''">
+                                        &times;
+                                    </span>
+                                    <label for="login"></label>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projects">
+                            <div class="top">
+                                <div class="subtitle">
+                                    Города
+                                    <div class="info">
+                                        ?
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="projects__content">
+                                <div class="projects__input">
+                                    <input class="fake__input__value" name="city" id="city" type="text">
+                                    <div class="fake__input">
+                                        <div class="top">
+                                            <div class="result">
+                                            
+                                            </div>
+                                            <div class="btn__more">
+                                                <span class="treugolnik"></span>
+                                            </div>
+                                        </div>
+                                        <div class="fake__list">
+                                            <div class="krasnoyarsk about fake__item">Красноярск</div>
+                                            <div class="stavropol about fake__item">Ставрополь</div>
+                                            <div class="tomskcity about fake__item">Томск</div>
+                                            <div class="rostov about fake__item">Ростов-на-Дону</div>
+                                        </div>
+                                    </div>
+                                    <label for="projects"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projects">
+                            <div class="subtitle">
+                                Колл-центр
+                                <div class="info">
+                                    ?
+                                </div>
+                            </div>
+                            <div class="projects__content">
+                                <div class="projects__input">
+                                    <input class="fake__input__value" name="callcenter" id="callcenter" type="text">
+                                    <div class="fake__input">
+                                        <div class="top">
+                                            <div class="result">
+                                            
+                                            </div>
+                                            <div class="btn__more">
+                                                <span class="treugolnik"></span>
+                                            </div>
+                                        </div>
+                                        <div class="fake__list">
+                                            <div class="first about fake__item">Первый</div>
+                                            <div class="tomskcall about fake__item">Томск</div>
+                                        </div>
+                                    </div>
+                                    <label for="callcenter"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projects">
+                            <div class="subtitle">
+                                Колл-центр по умолчанию
+                                <div class="info">
+                                    ?
+                                </div>
+                            </div>
+                            <div class="projects__content">
+                                <div class="projects__input">
+                                    <input class="fake__input__value" name="calldeafult" id="calldeafult" type="text">
+                                    <div class="fake__input">
+                                        <div class="top">
+                                            <div class="result">
+                                            
+                                            </div>
+                                            <div class="btn__more">
+                                                <span class="treugolnik"></span>
+                                            </div>
+                                        </div>
+                                        <div class="fake__list">
+                                            <div class="first about fake__item">Первый</div>
+                                            <div class="tomskcall about fake__item">Томск</div>
+                                        </div>
+                                    </div>
+                                    <label for="calldeafult"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="position">
+                            <div class="subtitle">
+                                Состояние пользователя
+                            </div>
+                            <div class="position__content">
+                                <div class="position__input">
+                                    <select name="sostoyanie" id="sostoyanie" data-placeholder="Выберите роль" class="select-locale">
+                                        <option value="deafult">Одиночный выбор</option>
+                                        <option value="admin">Администратор</option>
+                                        <option value="manager">Менеджер</option>
+                                        <option value="user">Пользователь</option>
+                                    </select>
+                                    <span id="clearrole" class="close" onclick="this.previousElementSibling.value = ''">
+                                        &times;
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="position">
+                            <div class="subtitle">
+                                Временная зона пользователя
+                            </div>
+                            <div class="position__content">
+                                <div class="position__input">
+                                    <select name="time" id="time" data-placeholder="Выберите роль" class="select-locale">
+                                        <option value="deafult">Выберите из списка</option>
+                                        <option value="krasnoyarsk">Asia/Krasnoyarsk</option>
+                                        <option value="moscow">Moscow/Russia</option>
+                                    </select>
+                                    <span id="clearrole" class="close" onclick="this.previousElementSibling.value = ''">
+                                        &times;
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="email">
+                            <div class="subtitle">
+                                Телефон
+                                <div class="info">
+                                    ?
+                                </div>
+                            </div>
+                            <div class="email__content">
+                                <div class="email__input">
+                                    <input type="text" name="phone" id="phone" placeholder="937 009 01 19">
+                                    <span class="close" onclick="this.previousElementSibling.value = ''">
+                                        &times;
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="email">
+                            <div class="subtitle">
+                                Телеграм
+                                <div class="info">
+                                    ?
+                                </div>
+                            </div>
+                            <div class="email__content">
+                                <div class="email__input">
+                                    <input type="text" name="telegram" id="telegram">
+                                    <span class="close" onclick="this.previousElementSibling.value = ''">
+                                        &times;
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="email">
+                            <div class="subtitle">
+                                Телеграм ID
+                                <div class="info">
+                                    ?
+                                </div>
+                            </div>
+                            <div class="email__content">
+                                <div class="email__input">
+                                    <input type="text" name="telegramid" id="telegramid">
+                                    <span class="close" onclick="this.previousElementSibling.value = ''">
+                                        &times;
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message__events">
+                            <div class="line__figur"></div>
+                            <div class="subtitle">
+                                Уведомлять в мессенджеры
+                            </div>
+                            <div class="tumbler">
+                                <label class="switch">
+                                    <input name="accept__mess" id="accept__mess" type="checkbox">
+                                    <svg class="polygon" width="35" height="15" viewBox="0 0 35 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.628589 7.5L5.96192 0.5H29.0381L34.3714 7.5L29.0381 14.5H5.96192L0.628589 7.5Z" fill="white" stroke="#FFA000"/>
+                                    </svg>                                            
+                                    <svg class="round" width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18.4306 0H6.26126L0.845947 9.98847L6.26126 19.9885H18.4306L23.8459 9.98847L18.4306 0Z" fill="#FFA610"/>
+                                    </svg>
+                                </label>
+                            </div>
+                        </div>
+                    <div class="result__btn">
+                        <button class="close__modal">Отменить</button>
+                        <input class="submit" type="submit" value="Сохранить">
+                    </div>
+                </form>
+        </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/createuser.js"></script>
+    <script src="chosen/chosen.jquery.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/fileloader.js"></script>
+
+
+    <script>
+        $(document).ready(function(){
+            $(".pop-up2__select").chosen();
+            $(".chosen-select").chosen({width: "254px"}); 
+            $(".select-locale").chosen({width: "170px"});
+            $(".select-date").chosen({width: "100%"})
+        });
+    </script>
+</body>
+</html>
